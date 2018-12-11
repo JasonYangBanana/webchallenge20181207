@@ -22,6 +22,10 @@
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
+  @media (max-width: 566px) {
+    top: 35px;
+    left: 20px;
+  }
 
   span {
     display: block;
@@ -111,11 +115,18 @@
     left: calc(50% - 450px);
     width: 175px;
     background-color: #fff;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   .heroImage {
     width: 510px;
     height: 510px;
+    @media (max-width: 566px) {
+      width: 320px;
+      height: 320px;
+    }
   }
 
   &::after {
@@ -126,6 +137,9 @@
     right: calc(50% - 450px);
     width: 175px;
     background-color: #fff;
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
@@ -135,6 +149,9 @@
   right: 0;
   width: 100px;
   height: 164px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .mouseButton {

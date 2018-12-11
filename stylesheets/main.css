@@ -167,7 +167,14 @@ table {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-/* line 26, ../sass/_kerwayBanner.scss */
+@media (max-width: 566px) {
+  /* line 16, ../sass/_kerwayBanner.scss */
+  .burgerMenu {
+    top: 35px;
+    left: 20px;
+  }
+}
+/* line 30, ../sass/_kerwayBanner.scss */
 .burgerMenu span {
   display: block;
   position: absolute;
@@ -178,72 +185,72 @@ table {
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-/* line 37, ../sass/_kerwayBanner.scss */
+/* line 41, ../sass/_kerwayBanner.scss */
 .burgerMenu span:nth-child(even) {
   left: 60%;
   border-radius: 0 5px 5px 0;
 }
-/* line 42, ../sass/_kerwayBanner.scss */
+/* line 46, ../sass/_kerwayBanner.scss */
 .burgerMenu span:nth-child(odd) {
   left: 0;
   border-radius: 5px 0 0 5px;
 }
-/* line 47, ../sass/_kerwayBanner.scss */
+/* line 51, ../sass/_kerwayBanner.scss */
 .burgerMenu span:nth-child(1), .burgerMenu span:nth-child(2) {
   top: 0;
 }
-/* line 52, ../sass/_kerwayBanner.scss */
+/* line 56, ../sass/_kerwayBanner.scss */
 .burgerMenu span:nth-child(3), .burgerMenu span:nth-child(4) {
   top: 8px;
 }
-/* line 57, ../sass/_kerwayBanner.scss */
+/* line 61, ../sass/_kerwayBanner.scss */
 .burgerMenu span:nth-child(5), .burgerMenu span:nth-child(6) {
   top: 16px;
 }
-/* line 62, ../sass/_kerwayBanner.scss */
+/* line 66, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(1), .burgerMenu.open span:nth-child(6) {
   transform: rotate(45deg);
 }
-/* line 67, ../sass/_kerwayBanner.scss */
+/* line 71, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(2), .burgerMenu.open span:nth-child(5) {
   transform: rotate(-45deg);
 }
-/* line 72, ../sass/_kerwayBanner.scss */
+/* line 76, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(1) {
   left: 4px;
   top: 7px;
 }
-/* line 77, ../sass/_kerwayBanner.scss */
+/* line 81, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(2) {
   left: calc(50% - 5px);
   top: 7px;
 }
-/* line 82, ../sass/_kerwayBanner.scss */
+/* line 86, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(3) {
   left: -50%;
   opacity: 0;
 }
-/* line 87, ../sass/_kerwayBanner.scss */
+/* line 91, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
-/* line 92, ../sass/_kerwayBanner.scss */
+/* line 96, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(5) {
   left: 4px;
   top: 29px;
 }
-/* line 97, ../sass/_kerwayBanner.scss */
+/* line 101, ../sass/_kerwayBanner.scss */
 .burgerMenu.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 29px;
 }
 
-/* line 103, ../sass/_kerwayBanner.scss */
+/* line 107, ../sass/_kerwayBanner.scss */
 .kerwayBannerContent {
   position: relative;
 }
-/* line 106, ../sass/_kerwayBanner.scss */
+/* line 110, ../sass/_kerwayBanner.scss */
 .kerwayBannerContent::before {
   content: " ";
   position: absolute;
@@ -253,12 +260,25 @@ table {
   width: 175px;
   background-color: #fff;
 }
-/* line 116, ../sass/_kerwayBanner.scss */
+@media (max-width: 1024px) {
+  /* line 110, ../sass/_kerwayBanner.scss */
+  .kerwayBannerContent::before {
+    display: none;
+  }
+}
+/* line 123, ../sass/_kerwayBanner.scss */
 .kerwayBannerContent .heroImage {
   width: 510px;
   height: 510px;
 }
-/* line 121, ../sass/_kerwayBanner.scss */
+@media (max-width: 566px) {
+  /* line 123, ../sass/_kerwayBanner.scss */
+  .kerwayBannerContent .heroImage {
+    width: 320px;
+    height: 320px;
+  }
+}
+/* line 132, ../sass/_kerwayBanner.scss */
 .kerwayBannerContent::after {
   content: " ";
   position: absolute;
@@ -268,8 +288,14 @@ table {
   width: 175px;
   background-color: #fff;
 }
+@media (max-width: 1024px) {
+  /* line 132, ../sass/_kerwayBanner.scss */
+  .kerwayBannerContent::after {
+    display: none;
+  }
+}
 
-/* line 132, ../sass/_kerwayBanner.scss */
+/* line 146, ../sass/_kerwayBanner.scss */
 .contantUsImage {
   position: fixed;
   top: calc(50% - 164px);
@@ -277,8 +303,14 @@ table {
   width: 100px;
   height: 164px;
 }
+@media (max-width: 768px) {
+  /* line 146, ../sass/_kerwayBanner.scss */
+  .contantUsImage {
+    display: none;
+  }
+}
 
-/* line 140, ../sass/_kerwayBanner.scss */
+/* line 157, ../sass/_kerwayBanner.scss */
 .mouseButton {
   margin: 0 auto;
   width: 24px;
@@ -290,7 +322,7 @@ table {
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
 }
-/* line 151, ../sass/_kerwayBanner.scss */
+/* line 168, ../sass/_kerwayBanner.scss */
 .mouseButton img {
   width: 100%;
 }
