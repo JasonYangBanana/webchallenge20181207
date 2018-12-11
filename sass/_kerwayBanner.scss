@@ -1,16 +1,31 @@
-.kerwayBanner {
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.kerwayMain {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kerwayBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   background-image: url("../images/kerway/header_photo_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transition: linear 100ms;
 }
 
 .burgerMenu {
