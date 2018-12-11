@@ -1,0 +1,167 @@
+.kerwayBanner {
+  background-image: url("../images/kerway/header_photo_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.burgerMenu {
+  width: 39px;
+  height: 19px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 16.5px;
+    background: #fff;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  & span:nth-child(even) {
+    left: 60%;
+    border-radius: 0 5px 5px 0;
+  }
+
+  & span:nth-child(odd) {
+    left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  & span:nth-child(1),
+  & span:nth-child(2) {
+    top: 0;
+  }
+
+  & span:nth-child(3),
+  & span:nth-child(4) {
+    top: 8px;
+  }
+
+  & span:nth-child(5),
+  & span:nth-child(6) {
+    top: 16px;
+  }
+
+  &.open span:nth-child(1),
+  &.open span:nth-child(6) {
+    transform: rotate(45deg);
+  }
+
+  &.open span:nth-child(2),
+  &.open span:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+
+  &.open span:nth-child(1) {
+    left: 4px;
+    top: 7px;
+  }
+
+  &.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+
+  &.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  &.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  &.open span:nth-child(5) {
+    left: 4px;
+    top: 29px;
+  }
+
+  &.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 29px;
+  }
+}
+
+.kerwayBannerContent {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    left: calc(50% - 450px);
+    width: 175px;
+    background-color: #fff;
+  }
+
+  .heroImage {
+    width: 510px;
+    height: 510px;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    right: calc(50% - 450px);
+    width: 175px;
+    background-color: #fff;
+  }
+}
+
+.contantUsImage {
+  position: fixed;
+  top: calc(50% - 164px);
+  right: 0;
+  width: 100px;
+  height: 164px;
+}
+
+.mouseButton {
+  margin: 0 auto;
+  width: 24px;
+  height: 34px;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+
+  img {
+    width: 100%;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 2px;
+  }
+
+  100% {
+    top: 0;
+  }
+}

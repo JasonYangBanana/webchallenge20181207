@@ -5,12 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="stylesheet/main.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
   <title>Document</title>
 </head>
 
 <body>
-
+  <div class="kerwayBanner">
+    <div class="burgerMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="kerwayBannerContent">
+      <img src="images/kerway/header_photo_foreground.png" alt="" class="heroImage">
+    </div>
+    <img src="images/kerway/goToContactUs 4.png" alt="" class="contantUsImage">
+    <div class="mouseButton">
+      <img src="images/kerway/arrow 3.png" alt="" class="mouseButton">
+    </div>
+  </div>
 </body>
+<script type="text/javascript">
+  let menu = document.querySelector(".burgerMenu")
+  console.log(menu);
+  menu.addEventListener("click", function() {
+    console.log(this)
+  })
+</script>
 
 </html>
