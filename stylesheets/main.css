@@ -349,14 +349,6 @@ table {
 }
 
 /* line 11, ../sass/_menu.scss */
-.closeButton {
-  color: #fff;
-  font-size: 32px;
-  position: absolute;
-  left: 50px;
-}
-
-/* line 18, ../sass/_menu.scss */
 .menuContent {
   height: 100%;
   display: flex;
@@ -365,24 +357,24 @@ table {
   align-items: flex-start;
 }
 
-/* line 27, ../sass/_menu.scss */
+/* line 20, ../sass/_menu.scss */
 .logo img {
   width: 164px;
   height: 18px;
 }
 
-/* line 33, ../sass/_menu.scss */
+/* line 26, ../sass/_menu.scss */
 .subPageLogo {
   display: flex;
   margin-top: 20px;
 }
-/* line 38, ../sass/_menu.scss */
+/* line 31, ../sass/_menu.scss */
 .subPageLogo img:first-child {
   width: 107px;
   height: 18px;
   padding-right: 15px;
 }
-/* line 44, ../sass/_menu.scss */
+/* line 37, ../sass/_menu.scss */
 .subPageLogo img:nth-child(2) {
   width: 92px;
   height: 18px;
@@ -392,38 +384,38 @@ table {
   border-style: solid;
   border-color: #fff;
 }
-/* line 54, ../sass/_menu.scss */
+/* line 47, ../sass/_menu.scss */
 .subPageLogo img:last-child {
   width: 100px;
   height: 18px;
   padding-left: 15px;
 }
 
-/* line 62, ../sass/_menu.scss */
+/* line 55, ../sass/_menu.scss */
 .menuMain {
   display: flex;
   flex-direction: column;
   position: relative;
   top: -67.5px;
 }
-/* line 69, ../sass/_menu.scss */
+/* line 62, ../sass/_menu.scss */
 .menuMain img:first-child {
   width: 230px;
   height: 40px;
 }
-/* line 74, ../sass/_menu.scss */
+/* line 67, ../sass/_menu.scss */
 .menuMain img:last-child {
   margin-top: 55px;
   width: 199px;
   height: 40px;
 }
 
-/* line 82, ../sass/_menu.scss */
+/* line 75, ../sass/_menu.scss */
 .menuLink {
   color: #fff;
   font-size: 16px;
 }
-/* line 86, ../sass/_menu.scss */
+/* line 79, ../sass/_menu.scss */
 .menuLink i {
   margin-right: 20px;
 }
