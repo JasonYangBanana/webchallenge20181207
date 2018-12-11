@@ -1,0 +1,89 @@
+.menu {
+  height: 100vh;
+  width: 590px;
+  background-color: #000;
+  position: relative;
+  opacity: 0.8;
+  padding: 50px 0 120px 145px;
+  box-sizing: border-box;
+}
+
+.closeButton {
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  left: 50px;
+}
+
+.menuContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  img {
+    width: 164px;
+    height: 18px;
+  }
+}
+
+.subPageLogo {
+  display: flex;
+  margin-top: 20px;
+
+  img {
+    &:first-child {
+      width: 107px;
+      height: 18px;
+      padding-right: 15px;
+    }
+
+    &:nth-child(2) {
+      width: 92px;
+      height: 18px;
+      padding: 0 15px;
+      border-left: 1px;
+      border-right: 1px;
+      border-style: solid;
+      border-color: #fff;
+    }
+
+    &:last-child {
+      width: 100px;
+      height: 18px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.menuMain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -67.5px;
+
+  img {
+    &:first-child {
+      width: 230px;
+      height: 40px;
+    }
+
+    &:last-child {
+      margin-top: 55px;
+      width: 199px;
+      height: 40px;
+    }
+  }
+}
+
+.menuLink {
+  color: #fff;
+  font-size: 16px;
+
+  i {
+    margin-right: 20px;
+  }
+}

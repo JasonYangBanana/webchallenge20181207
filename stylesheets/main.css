@@ -284,7 +284,6 @@ table {
   position: absolute;
   height: 1px;
   top: 50%;
-  right: calc(50% - 450px);
   width: 175px;
   background-color: #fff;
 }
@@ -295,7 +294,7 @@ table {
   }
 }
 
-/* line 146, ../sass/_kerwayBanner.scss */
+/* line 145, ../sass/_kerwayBanner.scss */
 .contantUsImage {
   position: fixed;
   top: calc(50% - 164px);
@@ -304,13 +303,13 @@ table {
   height: 164px;
 }
 @media (max-width: 768px) {
-  /* line 146, ../sass/_kerwayBanner.scss */
+  /* line 145, ../sass/_kerwayBanner.scss */
   .contantUsImage {
     display: none;
   }
 }
 
-/* line 157, ../sass/_kerwayBanner.scss */
+/* line 156, ../sass/_kerwayBanner.scss */
 .mouseButton {
   margin: 0 auto;
   width: 24px;
@@ -322,7 +321,7 @@ table {
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
 }
-/* line 168, ../sass/_kerwayBanner.scss */
+/* line 167, ../sass/_kerwayBanner.scss */
 .mouseButton img {
   width: 100%;
 }
@@ -337,4 +336,94 @@ table {
   100% {
     top: 0;
   }
+}
+/* line 1, ../sass/_menu.scss */
+.menu {
+  height: 100vh;
+  width: 590px;
+  background-color: #000;
+  position: relative;
+  opacity: 0.8;
+  padding: 50px 0 120px 145px;
+  box-sizing: border-box;
+}
+
+/* line 11, ../sass/_menu.scss */
+.closeButton {
+  color: #fff;
+  font-size: 32px;
+  position: absolute;
+  left: 50px;
+}
+
+/* line 18, ../sass/_menu.scss */
+.menuContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 27, ../sass/_menu.scss */
+.logo img {
+  width: 164px;
+  height: 18px;
+}
+
+/* line 33, ../sass/_menu.scss */
+.subPageLogo {
+  display: flex;
+  margin-top: 20px;
+}
+/* line 38, ../sass/_menu.scss */
+.subPageLogo img:first-child {
+  width: 107px;
+  height: 18px;
+  padding-right: 15px;
+}
+/* line 44, ../sass/_menu.scss */
+.subPageLogo img:nth-child(2) {
+  width: 92px;
+  height: 18px;
+  padding: 0 15px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+/* line 54, ../sass/_menu.scss */
+.subPageLogo img:last-child {
+  width: 100px;
+  height: 18px;
+  padding-left: 15px;
+}
+
+/* line 62, ../sass/_menu.scss */
+.menuMain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -67.5px;
+}
+/* line 69, ../sass/_menu.scss */
+.menuMain img:first-child {
+  width: 230px;
+  height: 40px;
+}
+/* line 74, ../sass/_menu.scss */
+.menuMain img:last-child {
+  margin-top: 55px;
+  width: 199px;
+  height: 40px;
+}
+
+/* line 82, ../sass/_menu.scss */
+.menuLink {
+  color: #fff;
+  font-size: 16px;
+}
+/* line 86, ../sass/_menu.scss */
+.menuLink i {
+  margin-right: 20px;
 }
