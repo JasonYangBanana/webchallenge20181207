@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700');
 $primary-color: #dacbc7;
 
 
@@ -15,18 +15,29 @@ a {
 .subTitle {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 66pt;
-    letter-spacing: 4pt;
+    font-size: 48px;
+    letter-spacing: 4px;
 }
-.subTitleCn {
+.rectTitleCn {
     font-weight: 300;
-    font-size: 16pt;
-    letter-spacing: 2pt;
+    font-size: 16px;
+    letter-spacing: 3px;
     border: 1px #000 solid;
-    width: 100px;
-    height: 137px;
+    padding: 20px 0 0 15px;
+    width: 85px;
+    height: 117px;
 }
+.enContent {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
 
+}
+.cnContent {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
 // html {
 //     height: 100%;
 //     overflow: hidden;
@@ -50,9 +61,6 @@ a {
         width: 200px;
     }
 }
-.hausennLogo {
-
-}
 .hausennLogo img {
     width: 27px;
 }
@@ -65,9 +73,9 @@ a {
 
 //idea
 .idea {
-    position: relative;
+    // position: relative;
     .ideaBlock {
-        position: absolute;
+        // position: absolute;
     }
     .nudeBlock {
         background-color: $primary-color;
@@ -75,36 +83,22 @@ a {
         height: 390px;
     }
     .ideaBanner {
-        position: absolute;
+        // position: absolute;
         img {
             width: 1166px;
         }
     }
     .ideaContent p {
-        position: absolute;
-        font-weight: bold;
-        font-size: 34px;
-        letter-spacing: 4px;
+        // position: absolute;
     
     }
 }
 
 
-
-
 //source
 .source {
-    .sourceBanner {
+    .sourceBanner img {
         width: 570px;
-    }
-    .cnSlogan {
-        font-weight: 300;
-        font-size: 15px;
-    }
-    .sourceContentEg p {
-        font-weight: bold;
-        font-size: 34px;
-        letter-spacing: 4px;
     }
     .blackBlock {
         background-color: #000;
@@ -120,7 +114,6 @@ a {
             width: 1050px;
         }
     }
-
 }
 
 //collections
@@ -130,7 +123,6 @@ a {
             width: 480px;
         }
     }
-
 }
 
 //season
@@ -157,22 +149,33 @@ footer {
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
-        letter-spacing: 1px;
+        letter-spacing: 3px;
+        .address{
+            padding: 120px 0 0 0;
+        }
     }
     a {
-        font-weight: 300;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
         font-size: 13px;
-        letter-spacing: 1px;
-        line-height: 15px;
+        letter-spacing: 3px;
+    }
+    .email {
+        padding-top: 10px;
     }
     .contactName {
         margin-left: auto;
         margin-top: 75px;
+        img {
+            width: 312px;
+        }
         .copyright {
             font-family: 'Open Sans', sans-serif;
             font-weight: 300;
-            font-size: 13px;
-            letter-spacing: 1px;
+            font-size: 14px;
+            letter-spacing: 3px;
+            padding-top: 30px;
         }
     }
-}
+} 
