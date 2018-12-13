@@ -1,0 +1,49 @@
+.kerwayWorks{
+    margin-top: 80px;
+    .kerwayTitle{
+        color: white;
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 40pt;
+        font-family: cursive;
+    }
+    .kerwaySubtitle{
+        color: white;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 40pt;
+        letter-spacing: 4pt;
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        &::before{
+                content: '';
+                display: block;
+                background-color: #fff;
+                height: 16px;
+                width: 150px;
+                margin-bottom: 30px;
+        }
+        .kerwayChineseSubtitle{
+            font-size: 32pt;
+        }
+    }
+    .grid{
+        margin: 0 auto;
+        max-width: 1200px;
+        &::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .grid-item{
+            padding: 25px;
+            float: left;
+            width: 40%;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
