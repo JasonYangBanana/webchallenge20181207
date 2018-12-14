@@ -71,55 +71,122 @@ a:hover {
   z-index: 100;
 }
 
-/* line 80, ../sass/_hausennMain.scss */
+/* line 79, ../sass/_hausennMain.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 88, ../sass/_hausennMain.scss */
+.container {
+  width: 100%;
+}
+
+/* line 91, ../sass/_hausennMain.scss */
+.parallax {
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform-style: preserve-3d;
+  perspective: 1px;
+}
+/* line 98, ../sass/_hausennMain.scss */
+.parallax::-webkit-scrollbar {
+  width: 0;
+}
+
+/* line 102, ../sass/_hausennMain.scss */
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* line 109, ../sass/_hausennMain.scss */
+.parallax__layer--fore {
+  position: absolute;
+  transform: translateZ(0px) scale(1);
+  z-index: 1;
+}
+
+/* line 114, ../sass/_hausennMain.scss */
+.parallax__layer--base {
+  position: absolute;
+  transform: translateZ(-1px) scale(1);
+}
+
+/* line 118, ../sass/_hausennMain.scss */
+.parallax__layer--back {
+  position: absolute;
+  transform: translateZ(-2px) scale(3.2);
+  z-index: -1;
+}
+
+/* line 124, ../sass/_hausennMain.scss */
+.idea .enContent {
+  transform: translateX(450px) translateY(15px);
+}
+/* line 127, ../sass/_hausennMain.scss */
+.idea .banner1 {
+  transform: translateX(-550px) translateY(-450px);
+}
+/* line 130, ../sass/_hausennMain.scss */
 .idea .nudeBlock {
   background-color: #dacbc7;
   width: 1023px;
-  height: 390px;
-}
-/* line 87, ../sass/_hausennMain.scss */
-.idea .ideaBanner img {
-  width: 1166px;
+  height: 388px;
+  transform: translateX(-110px) translateY(0px) scale(0.85);
 }
 
-/* line 100, ../sass/_hausennMain.scss */
-.source .sourceBanner img {
+/* line 139, ../sass/_hausennMain.scss */
+.source .banner img {
   width: 570px;
+  transform: translateX(160px) translateY(100px);
 }
-/* line 103, ../sass/_hausennMain.scss */
+/* line 144, ../sass/_hausennMain.scss */
+.source .cnContent {
+  transform: translateX(1000px) translateY(300px);
+}
+/* line 147, ../sass/_hausennMain.scss */
 .source .blackBlock {
   background-color: #000;
   width: 55px;
   height: 7px;
+  transform: translateX(300px) translateY(0px);
+}
+/* line 153, ../sass/_hausennMain.scss */
+.source .enContent {
+  transform: translateX(0px) translateY(0px);
 }
 
-/* line 113, ../sass/_hausennMain.scss */
-.couture .cotureBanner img {
+/* line 161, ../sass/_hausennMain.scss */
+.couture .banner img {
   width: 1050px;
 }
 
-/* line 122, ../sass/_hausennMain.scss */
-.collections .collectionsBanner img {
+/* line 172, ../sass/_hausennMain.scss */
+.collections .banner img {
   width: 480px;
 }
 
-/* line 131, ../sass/_hausennMain.scss */
-.seasons .seasonsBannerMan img {
+/* line 181, ../sass/_hausennMain.scss */
+.seasons .banner1 img {
   width: 448px;
 }
-/* line 136, ../sass/_hausennMain.scss */
-.seasons .seasonsBannerLeaf img {
+/* line 186, ../sass/_hausennMain.scss */
+.seasons .banner2 img {
   width: 587px;
 }
 
-/* line 142, ../sass/_hausennMain.scss */
+/* line 192, ../sass/_hausennMain.scss */
 footer {
   background-color: #dacbc7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
 }
-/* line 147, ../sass/_hausennMain.scss */
+/* line 197, ../sass/_hausennMain.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -127,11 +194,11 @@ footer .contactInfo {
   font-size: 13px;
   letter-spacing: 3px;
 }
-/* line 153, ../sass/_hausennMain.scss */
+/* line 203, ../sass/_hausennMain.scss */
 footer .contactInfo .address {
   padding: 120px 0 0 0;
 }
-/* line 157, ../sass/_hausennMain.scss */
+/* line 207, ../sass/_hausennMain.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -139,20 +206,20 @@ footer a {
   font-size: 13px;
   letter-spacing: 3px;
 }
-/* line 164, ../sass/_hausennMain.scss */
+/* line 214, ../sass/_hausennMain.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 167, ../sass/_hausennMain.scss */
+/* line 217, ../sass/_hausennMain.scss */
 footer .contactName {
   margin-left: auto;
   margin-top: 75px;
 }
-/* line 170, ../sass/_hausennMain.scss */
+/* line 220, ../sass/_hausennMain.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 173, ../sass/_hausennMain.scss */
+/* line 223, ../sass/_hausennMain.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;

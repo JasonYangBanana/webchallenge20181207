@@ -71,54 +71,104 @@ a {
     z-index: 100;
 }
 
+
+html {
+    // height: 100%;
+    // overflow: hidden;
+  }
+  body { 
+    margin:0;
+    padding:0;
+    // height: 100%;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // transform-style: preserve-3d;
+    // perspective: 1px;
+  }
+  .container {
+      width: 100%;
+  }
+  .parallax {
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    &::-webkit-scrollbar {
+        width: 0;
+     }
+  }
+  .parallax__group {
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+}
 //idea
+
+.parallax__layer--fore {
+    position: absolute;
+    transform: translateZ(0px) scale(1);
+    z-index: 1;
+}
+.parallax__layer--base {
+    position: absolute;
+    transform: translateZ(-1px) scale(1);
+}
+.parallax__layer--back {
+    position: absolute;
+    transform: translateZ(-2px) scale(3.2);
+    z-index: -1;
+}
 .idea {
-    // position: relative;
-    .ideaBlock {
-        // position: absolute;
+    .enContent {
+        transform: translateX(450px) translateY(15px);
+    }
+    .banner1 {
+        transform: translateX(-550px) translateY(-450px);
     }
     .nudeBlock {
         background-color: $primary-color;
         width: 1023px;
-        height: 390px;
-    }
-    .ideaBanner {
-        // position: absolute;
-        img {
-            width: 1166px;
-        }
-    }
-    .ideaContent p {
-        // position: absolute;
-    
+        height: 388px;
+        transform: translateX(-110px)translateY(0px) scale(0.85);
     }
 }
-
-
-//source
 .source {
-    .sourceBanner img {
-        width: 570px;
+    .banner {
+        img {
+            width: 570px;
+            transform: translateX(160px) translateY(100px);
+        }
+    }
+    .cnContent {
+        transform: translateX(1000px) translateY(300px);
     }
     .blackBlock {
         background-color: #000;
         width: 55px;
         height: 7px;
+        transform: translateX(300px) translateY(0px);
+    }
+    .enContent {
+        transform: translateX(0px) translateY(0px);
     }
 }
 
 //couture
 .couture {
-    .cotureBanner {
+    .banner {
         img {
             width: 1050px;
         }
     }
+
+
 }
 
 //collections
 .collections {
-    .collectionsBanner {
+    .banner {
         img {
             width: 480px;
         }
@@ -127,12 +177,12 @@ a {
 
 //season
 .seasons {
-    .seasonsBannerMan {
+    .banner1 {
         img {
             width: 448px;
         }
     }
-    .seasonsBannerLeaf {
+    .banner2 {
         img {
             width: 587px;
         }
