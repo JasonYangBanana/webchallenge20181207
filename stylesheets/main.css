@@ -445,7 +445,7 @@ body {
 #kerwayWorks .grid .grid-item img {
   max-width: 100%;
 }
-#kerwayWorks .kerwatWorksFliter {
+#kerwayWorks .kerwayWorksFliter {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -456,61 +456,61 @@ body {
   display: flex;
   justify-content: space-between;
 }
-#kerwayWorks .kerwatWorksFliter .nineDots {
+#kerwayWorks .kerwayWorksFliter .nineDots {
   color: white;
   font-size: 40px;
 }
-#kerwayWorks .kerwatWorksFliter .filters {
+#kerwayWorks .kerwayWorksFliter .filters {
   display: flex;
   justify-content: space-around;
 }
-#kerwayWorks .kerwatWorksFliter .filters .item {
+#kerwayWorks .kerwayWorksFliter .filters .item {
   margin: 0 20px;
 }
-#kerwayWorks .kerwatWorksFliter .filters .item .filterKinds {
+#kerwayWorks .kerwayWorksFliter .filters .item .filterKinds {
   color: white;
   font-size: 20px;
 }
-#kerwayWorks .kerwatWorksFliter .filters .item .listContainer {
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer {
   margin-top: 16px;
   padding-top: 10px;
   background-color: #fff;
 }
-#kerwayWorks .kerwatWorksFliter .filters .item .listContainer li[data-filter] {
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer li[data-filter] {
   color: rgba(0, 0, 0, 0.721);
   padding: 8px 10px;
 }
-#kerwayWorks .kerwatWorksFliter .filters .item .listContainer .filterSubtitle {
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer .filterSubtitle {
   color: black;
   font-weight: 600;
   font-size: 18px;
   padding: 8px 10px;
 }
-#kerwayWorks .kerwatWorksFliter .filters .workProjects {
+#kerwayWorks .kerwayWorksFliter .filters .workProjects {
   transition: 1s ease-in-out;
 }
-#kerwayWorks .kerwatWorksFliter .filters .workProjects:hover {
+#kerwayWorks .kerwayWorksFliter .filters .workProjects:hover {
   transform: translateY(-426px);
 }
-#kerwayWorks .kerwatWorksFliter .filters .photographers {
+#kerwayWorks .kerwayWorksFliter .filters .photographers {
   transition: 1s ease-in-out;
 }
-#kerwayWorks .kerwatWorksFliter .filters .photographers:hover {
+#kerwayWorks .kerwayWorksFliter .filters .photographers:hover {
   transform: translateY(-390px);
 }
-#kerwayWorks .kerwatWorksFliter .filters .styleists {
+#kerwayWorks .kerwayWorksFliter .filters .styleists {
   transition: 1s ease-in-out;
 }
-#kerwayWorks .kerwatWorksFliter .filters .styleists:hover {
+#kerwayWorks .kerwayWorksFliter .filters .styleists:hover {
   transform: translateY(-134px);
 }
-#kerwayWorks .kerwatWorksFliter .filters .directors {
+#kerwayWorks .kerwayWorksFliter .filters .directors {
   transition: 1s ease-in-out;
 }
-#kerwayWorks .kerwatWorksFliter .filters .directors:hover {
+#kerwayWorks .kerwayWorksFliter .filters .directors:hover {
   transform: translateY(-70px);
 }
-#kerwayWorks .kerwatWorksFliter .arrowUp {
+#kerwayWorks .kerwayWorksFliter .arrowUp {
   color: white;
   font-size: 40px;
 }
