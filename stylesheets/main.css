@@ -392,10 +392,14 @@ body::-webkit-scrollbar {
   margin-right: 20px;
 }
 
-.kerwayWorks {
+body {
+  box-sizing: border-box;
+}
+
+#kerwayWorks {
   margin-top: 80px;
 }
-.kerwayWorks .kerwayTitle {
+#kerwayWorks .kerwayTitle {
   color: white;
   margin-bottom: 80px;
   text-align: center;
@@ -403,7 +407,7 @@ body::-webkit-scrollbar {
   font-size: 40pt;
   font-family: cursive;
 }
-.kerwayWorks .kerwaySubtitle {
+#kerwayWorks .kerwaySubtitle {
   color: white;
   font-family: sans-serif;
   font-weight: 600;
@@ -413,7 +417,7 @@ body::-webkit-scrollbar {
   margin-bottom: 30px;
   margin-left: 50px;
 }
-.kerwayWorks .kerwaySubtitle::before {
+#kerwayWorks .kerwaySubtitle::before {
   content: '';
   display: block;
   background-color: #fff;
@@ -421,25 +425,94 @@ body::-webkit-scrollbar {
   width: 150px;
   margin-bottom: 30px;
 }
-.kerwayWorks .kerwaySubtitle .kerwayChineseSubtitle {
+#kerwayWorks .kerwaySubtitle .kerwayChineseSubtitle {
   font-size: 32pt;
 }
-.kerwayWorks .grid {
+#kerwayWorks .grid {
   margin: 0 auto;
   max-width: 1200px;
 }
-.kerwayWorks .grid::after {
+#kerwayWorks .grid::after {
   content: '';
   display: block;
   clear: both;
 }
-.kerwayWorks .grid .grid-item {
+#kerwayWorks .grid .grid-item {
   padding: 25px;
   float: left;
   width: 40%;
 }
-.kerwayWorks .grid .grid-item img {
+#kerwayWorks .grid .grid-item img {
   max-width: 100%;
+}
+#kerwayWorks .kerwatWorksFliter {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#kerwayWorks .kerwatWorksFliter .nineDots {
+  color: white;
+  font-size: 40px;
+}
+#kerwayWorks .kerwatWorksFliter .filters {
+  display: flex;
+  justify-content: space-around;
+}
+#kerwayWorks .kerwatWorksFliter .filters .item {
+  margin: 0 20px;
+}
+#kerwayWorks .kerwatWorksFliter .filters .item .filterKinds {
+  color: white;
+  font-size: 20px;
+}
+#kerwayWorks .kerwatWorksFliter .filters .item .listContainer {
+  margin-top: 16px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+#kerwayWorks .kerwatWorksFliter .filters .item .listContainer li[data-filter] {
+  color: rgba(0, 0, 0, 0.721);
+  padding: 8px 10px;
+}
+#kerwayWorks .kerwatWorksFliter .filters .item .listContainer .filterSubtitle {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+#kerwayWorks .kerwatWorksFliter .filters .workProjects {
+  transition: 1s ease-in-out;
+}
+#kerwayWorks .kerwatWorksFliter .filters .workProjects:hover {
+  transform: translateY(-426px);
+}
+#kerwayWorks .kerwatWorksFliter .filters .photographers {
+  transition: 1s ease-in-out;
+}
+#kerwayWorks .kerwatWorksFliter .filters .photographers:hover {
+  transform: translateY(-390px);
+}
+#kerwayWorks .kerwatWorksFliter .filters .styleists {
+  transition: 1s ease-in-out;
+}
+#kerwayWorks .kerwatWorksFliter .filters .styleists:hover {
+  transform: translateY(-134px);
+}
+#kerwayWorks .kerwatWorksFliter .filters .directors {
+  transition: 1s ease-in-out;
+}
+#kerwayWorks .kerwatWorksFliter .filters .directors:hover {
+  transform: translateY(-70px);
+}
+#kerwayWorks .kerwatWorksFliter .arrowUp {
+  color: white;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
