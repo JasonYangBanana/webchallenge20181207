@@ -1,15 +1,28 @@
-let menu = document.querySelector(".burgerMenu")
-menu.addEventListener("click", function() {
-  addClass()
+let menu = document.querySelector(".menu")
+let menuStatus = false
+
+let buggerMenu = document.querySelector(".burgerMenu")
+buggerMenu.addEventListener("click", function() {
+  burgerMenuChange()
+  animationMenu()
 })
 
-function addClass() {
-  let hasClass = menu.className
+function burgerMenuChange() {
+  let hasClass = buggerMenu.className
   if (hasClass.includes("open")) {
-    menu.setAttribute("class", `burgerMenu`);
+    buggerMenu.setAttribute("class", `burgerMenu`);
   } else {
-    menu.setAttribute("class", `burgerMenu open`);
+    buggerMenu.setAttribute("class", `burgerMenu open`);
   }
+}
+
+function animationMenu() {
+  if (menuStatus) {
+    menu.style.left = "-590px";
+  } else {
+    menu.style.left = "0px";
+  }
+  menuStatus = !menuStatus
 }
 let kerwayBanner = document.querySelector(".kerwayBanner")
 let kerwayBackground = document.querySelector(".kerwayBackground")
