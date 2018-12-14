@@ -48,22 +48,28 @@ a:hover {
   letter-spacing: 3px;
 }
 
-/* line 57, ../sass/_hausennMain.scss */
+/* line 41, ../sass/_hausennMain.scss */
+.animated {
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
+
+/* line 62, ../sass/_hausennMain.scss */
 .hausennTitle {
   width: 200px;
   margin: 20px auto 0px auto;
 }
-/* line 60, ../sass/_hausennMain.scss */
+/* line 65, ../sass/_hausennMain.scss */
 .hausennTitle img {
   width: 200px;
 }
 
-/* line 64, ../sass/_hausennMain.scss */
+/* line 69, ../sass/_hausennMain.scss */
 .hausennLogo img {
   width: 27px;
 }
 
-/* line 67, ../sass/_hausennMain.scss */
+/* line 72, ../sass/_hausennMain.scss */
 .hausennContent {
   position: fixed;
   right: 0;
@@ -71,23 +77,23 @@ a:hover {
   z-index: 100;
 }
 
-/* line 73, ../sass/_hausennMain.scss */
+/* line 78, ../sass/_hausennMain.scss */
 .section2 {
-  height: 8050px;
+  height: 8375px;
 }
 
-/* line 81, ../sass/_hausennMain.scss */
+/* line 86, ../sass/_hausennMain.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 90, ../sass/_hausennMain.scss */
+/* line 95, ../sass/_hausennMain.scss */
 .container {
   width: 100%;
 }
 
-/* line 93, ../sass/_hausennMain.scss */
+/* line 98, ../sass/_hausennMain.scss */
 .parallax {
   height: 100vh;
   overflow-y: scroll;
@@ -95,7 +101,7 @@ body {
   perspective: 1px;
 }
 
-/* line 103, ../sass/_hausennMain.scss */
+/* line 108, ../sass/_hausennMain.scss */
 .parallax__group {
   position: relative;
   height: 100vh;
@@ -103,93 +109,93 @@ body {
   transform-style: preserve-3d;
 }
 
-/* line 111, ../sass/_hausennMain.scss */
+/* line 116, ../sass/_hausennMain.scss */
 .parallax__layer--fore {
   position: absolute;
   transform: translateZ(0px) scale(1);
   z-index: 1;
 }
 
-/* line 116, ../sass/_hausennMain.scss */
+/* line 121, ../sass/_hausennMain.scss */
 .parallax__layer--base {
   position: absolute;
   transform: translateZ(-1px) scale(1);
 }
 
-/* line 120, ../sass/_hausennMain.scss */
+/* line 125, ../sass/_hausennMain.scss */
 .parallax__layer--back {
   position: absolute;
   transform: translateZ(-2px) scale(3.2);
   z-index: -1;
 }
 
-/* line 125, ../sass/_hausennMain.scss */
+/* line 130, ../sass/_hausennMain.scss */
 .parallax__layer--back2 {
   position: absolute;
   transform: translateZ(-3px) scale(2);
   z-index: -2;
 }
 
-/* line 131, ../sass/_hausennMain.scss */
+/* line 136, ../sass/_hausennMain.scss */
 .idea .enContent {
   transform: translateX(450px) translateY(15px);
 }
-/* line 134, ../sass/_hausennMain.scss */
+/* line 139, ../sass/_hausennMain.scss */
 .idea .banner1 {
   transform: translateX(-550px) translateY(-450px);
 }
-/* line 137, ../sass/_hausennMain.scss */
+/* line 142, ../sass/_hausennMain.scss */
 .idea .banner2 {
   transform: translateX(-350px) translateY(-100px);
 }
-/* line 140, ../sass/_hausennMain.scss */
+/* line 145, ../sass/_hausennMain.scss */
 .idea .nudeBlock {
   background-color: #dacbc7;
   width: 1023px;
   height: 388px;
   transform: translateX(-110px) translateY(0px) scale(0.85);
 }
-/* line 146, ../sass/_hausennMain.scss */
+/* line 151, ../sass/_hausennMain.scss */
 .idea .cnContent {
   transform: translateX(900px) translateY(50px);
 }
 
-/* line 152, ../sass/_hausennMain.scss */
+/* line 157, ../sass/_hausennMain.scss */
 .source .blackBlock {
   background-color: #000;
   width: 55px;
   height: 7px;
   transform: translateX(100px) translateY(250px);
 }
-/* line 158, ../sass/_hausennMain.scss */
+/* line 163, ../sass/_hausennMain.scss */
 .source .enContent {
   transform: translateX(150px) translateY(700px) scale(2);
 }
-/* line 161, ../sass/_hausennMain.scss */
+/* line 166, ../sass/_hausennMain.scss */
 .source .cnContent {
   transform: translateX(900px) translateY(1200px);
 }
 
-/* line 168, ../sass/_hausennMain.scss */
+/* line 173, ../sass/_hausennMain.scss */
 .couture .subTitle {
   transform: translateX(900px) translateY(800px);
 }
-/* line 171, ../sass/_hausennMain.scss */
+/* line 176, ../sass/_hausennMain.scss */
 .couture .banner {
   transform: translateX(-250px) translateY(600px);
 }
-/* line 174, ../sass/_hausennMain.scss */
+/* line 179, ../sass/_hausennMain.scss */
 .couture .rectTitleCn {
   transform: translateX(1080px) translateY(850px);
 }
-/* line 177, ../sass/_hausennMain.scss */
+/* line 182, ../sass/_hausennMain.scss */
 .couture .nudeBlock {
   width: 460px;
   height: 425px;
   background-color: #dacbc7;
   transform: translateX(450px) translateY(300px);
 }
-/* line 183, ../sass/_hausennMain.scss */
+/* line 188, ../sass/_hausennMain.scss */
 .couture .blackBlock {
   width: 135px;
   height: 28px;
@@ -197,26 +203,26 @@ body {
   transform: translateX(1080px) translateY(900px) scale(0.6);
 }
 
-/* line 193, ../sass/_hausennMain.scss */
+/* line 198, ../sass/_hausennMain.scss */
 .collections .subTitle {
   transform: translateX(100px) translateY(2000px);
 }
-/* line 196, ../sass/_hausennMain.scss */
+/* line 201, ../sass/_hausennMain.scss */
 .collections .rectTitleCn {
   transform: translateX(40px) translateY(1700px);
 }
-/* line 199, ../sass/_hausennMain.scss */
+/* line 204, ../sass/_hausennMain.scss */
 .collections .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(100px) translateY(2300px);
 }
-/* line 205, ../sass/_hausennMain.scss */
+/* line 210, ../sass/_hausennMain.scss */
 .collections .banner {
   transform: translateX(-280px) translateY(1800px);
 }
-/* line 208, ../sass/_hausennMain.scss */
+/* line 213, ../sass/_hausennMain.scss */
 .collections .nudeBlock {
   width: 489px;
   height: 600px;
@@ -224,45 +230,45 @@ body {
   transform: translateX(-180px) translateY(600px);
 }
 
-/* line 219, ../sass/_hausennMain.scss */
+/* line 224, ../sass/_hausennMain.scss */
 .seasons .subTitle {
   transform: translateX(600px) translateY(3700px);
 }
-/* line 222, ../sass/_hausennMain.scss */
+/* line 227, ../sass/_hausennMain.scss */
 .seasons .rectTitleCn {
   transform: translateX(720px) translateY(3200px);
 }
-/* line 225, ../sass/_hausennMain.scss */
+/* line 230, ../sass/_hausennMain.scss */
 .seasons .nudeBlock {
   width: 180px;
   height: 216px;
   background-color: #dacbc7;
   transform: translateX(720px) translateY(3450px) scale(2);
 }
-/* line 231, ../sass/_hausennMain.scss */
+/* line 236, ../sass/_hausennMain.scss */
 .seasons .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(1750px) translateY(4500px);
 }
-/* line 237, ../sass/_hausennMain.scss */
+/* line 242, ../sass/_hausennMain.scss */
 .seasons .banner1 {
   transform: translateX(400px) translateY(1000px) scale(0.5);
 }
-/* line 240, ../sass/_hausennMain.scss */
+/* line 245, ../sass/_hausennMain.scss */
 .seasons .banner2 {
   transform: translateX(400px) translateY(2200px);
 }
 
-/* line 245, ../sass/_hausennMain.scss */
+/* line 250, ../sass/_hausennMain.scss */
 footer {
   background-color: #dacbc7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
 }
-/* line 250, ../sass/_hausennMain.scss */
+/* line 255, ../sass/_hausennMain.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -272,11 +278,11 @@ footer .contactInfo {
   width: 80%;
   margin: 0 auto;
 }
-/* line 258, ../sass/_hausennMain.scss */
+/* line 263, ../sass/_hausennMain.scss */
 footer .contactInfo .address {
   padding: 120px 0 0 0;
 }
-/* line 262, ../sass/_hausennMain.scss */
+/* line 267, ../sass/_hausennMain.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -284,21 +290,21 @@ footer a {
   font-size: 13px;
   letter-spacing: 3px;
 }
-/* line 269, ../sass/_hausennMain.scss */
+/* line 274, ../sass/_hausennMain.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 272, ../sass/_hausennMain.scss */
+/* line 277, ../sass/_hausennMain.scss */
 footer .contactName {
   width: 80%;
   margin: 75px auto 0 auto;
   text-align: right;
 }
-/* line 276, ../sass/_hausennMain.scss */
+/* line 281, ../sass/_hausennMain.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 279, ../sass/_hausennMain.scss */
+/* line 284, ../sass/_hausennMain.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;

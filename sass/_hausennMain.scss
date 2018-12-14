@@ -38,6 +38,11 @@ a {
     font-size: 16px;
     letter-spacing: 3px;
 }
+.animated {
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+
 // html {
 //     height: 100%;
 //     overflow: hidden;
@@ -71,7 +76,7 @@ a {
     z-index: 100;
 }
 .section2 {
-    height: 8050px;
+    height: 8375px;
 }
 
 html {
