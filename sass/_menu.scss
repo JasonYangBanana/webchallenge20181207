@@ -1,11 +1,24 @@
 .menu {
+  z-index: 10;
   height: 100vh;
   max-width: 590px;
   background-color: #000;
-  position: relative;
+  position: absolute;
   opacity: 0.8;
   padding: 50px 0 120px 145px;
   box-sizing: border-box;
+  left: 0;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+}
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100px;
+  }
 }
 
 .menuContent {
