@@ -1,11 +1,14 @@
 .menu {
+  z-index: 1;
   height: 100vh;
   max-width: 590px;
   background-color: #000;
-  position: relative;
+  position: absolute;
   opacity: 0.8;
   padding: 50px 0 120px 145px;
   box-sizing: border-box;
+  left: -590px;
+  transition: 2s;
 }
 
 .menuContent {
