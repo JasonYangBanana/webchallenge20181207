@@ -227,6 +227,108 @@ table {
   margin-right: 20px;
 }
 
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 1, ../sass/partial/_burgerMenu.scss */
+.burgerMenu {
+  z-index: 2;
+  width: 39px;
+  height: 19px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 566px) {
+  /* line 1, ../sass/partial/_burgerMenu.scss */
+  .burgerMenu {
+    top: 35px;
+    left: 20px;
+  }
+}
+/* line 16, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 16.5px;
+  background: #fff;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+/* line 27, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span:nth-child(even) {
+  left: 60%;
+  border-radius: 0 5px 5px 0;
+}
+/* line 32, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span:nth-child(odd) {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+/* line 37, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span:nth-child(1), .burgerMenu span:nth-child(2) {
+  top: 0;
+}
+/* line 42, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span:nth-child(3), .burgerMenu span:nth-child(4) {
+  top: 8px;
+}
+/* line 47, ../sass/partial/_burgerMenu.scss */
+.burgerMenu span:nth-child(5), .burgerMenu span:nth-child(6) {
+  top: 16px;
+}
+/* line 52, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(1), .burgerMenu.open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+/* line 57, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(2), .burgerMenu.open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+/* line 62, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(1) {
+  left: 4px;
+  top: 7px;
+}
+/* line 67, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+/* line 72, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+/* line 77, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+/* line 82, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(5) {
+  left: 4px;
+  top: 18px;
+}
+/* line 87, ../sass/partial/_burgerMenu.scss */
+.burgerMenu.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 18px;
+}
+
 /* line 1, ../sass/partial/_contactUs.scss */
 .contactUs {
   width: 100vw;
@@ -259,17 +361,6 @@ table {
   }
 }
 
-@keyframes bounce {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 2px;
-  }
-  100% {
-    top: 0;
-  }
-}
 /* line 1, ../sass/kerway/_kerwayBanner.scss */
 body {
   background-color: black;
@@ -309,101 +400,10 @@ body::-webkit-scrollbar {
 }
 
 /* line 27, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu {
-  z-index: 2;
-  width: 39px;
-  height: 19px;
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-@media (max-width: 566px) {
-  /* line 27, ../sass/kerway/_kerwayBanner.scss */
-  .burgerMenu {
-    top: 35px;
-    left: 20px;
-  }
-}
-/* line 42, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 16.5px;
-  background: #fff;
-  opacity: 1;
-  transform: rotate(0deg);
-  transition: 0.3s ease-in-out;
-}
-/* line 53, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span:nth-child(even) {
-  left: 60%;
-  border-radius: 0 5px 5px 0;
-}
-/* line 58, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span:nth-child(odd) {
-  left: 0;
-  border-radius: 5px 0 0 5px;
-}
-/* line 63, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span:nth-child(1), .burgerMenu span:nth-child(2) {
-  top: 0;
-}
-/* line 68, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span:nth-child(3), .burgerMenu span:nth-child(4) {
-  top: 8px;
-}
-/* line 73, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu span:nth-child(5), .burgerMenu span:nth-child(6) {
-  top: 16px;
-}
-/* line 78, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(1), .burgerMenu.open span:nth-child(6) {
-  transform: rotate(45deg);
-}
-/* line 83, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(2), .burgerMenu.open span:nth-child(5) {
-  transform: rotate(-45deg);
-}
-/* line 88, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(1) {
-  left: 4px;
-  top: 7px;
-}
-/* line 93, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(2) {
-  left: calc(50% - 5px);
-  top: 7px;
-}
-/* line 98, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(3) {
-  left: -50%;
-  opacity: 0;
-}
-/* line 103, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(4) {
-  left: 100%;
-  opacity: 0;
-}
-/* line 108, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(5) {
-  left: 4px;
-  top: 18px;
-}
-/* line 113, ../sass/kerway/_kerwayBanner.scss */
-.burgerMenu.open span:nth-child(6) {
-  left: calc(50% - 5px);
-  top: 18px;
-}
-
-/* line 119, ../sass/kerway/_kerwayBanner.scss */
 .kerwayBannerContent {
   position: relative;
 }
-/* line 122, ../sass/kerway/_kerwayBanner.scss */
+/* line 30, ../sass/kerway/_kerwayBanner.scss */
 .kerwayBannerContent::before {
   content: " ";
   position: absolute;
@@ -414,24 +414,24 @@ body::-webkit-scrollbar {
   background-color: #fff;
 }
 @media (max-width: 1024px) {
-  /* line 122, ../sass/kerway/_kerwayBanner.scss */
+  /* line 30, ../sass/kerway/_kerwayBanner.scss */
   .kerwayBannerContent::before {
     display: none;
   }
 }
-/* line 135, ../sass/kerway/_kerwayBanner.scss */
+/* line 43, ../sass/kerway/_kerwayBanner.scss */
 .kerwayBannerContent .heroImage {
   width: 510px;
   height: 510px;
 }
 @media (max-width: 566px) {
-  /* line 135, ../sass/kerway/_kerwayBanner.scss */
+  /* line 43, ../sass/kerway/_kerwayBanner.scss */
   .kerwayBannerContent .heroImage {
     width: 320px;
     height: 320px;
   }
 }
-/* line 144, ../sass/kerway/_kerwayBanner.scss */
+/* line 52, ../sass/kerway/_kerwayBanner.scss */
 .kerwayBannerContent::after {
   content: " ";
   position: absolute;
@@ -441,13 +441,13 @@ body::-webkit-scrollbar {
   background-color: #fff;
 }
 @media (max-width: 1024px) {
-  /* line 144, ../sass/kerway/_kerwayBanner.scss */
+  /* line 52, ../sass/kerway/_kerwayBanner.scss */
   .kerwayBannerContent::after {
     display: none;
   }
 }
 
-/* line 157, ../sass/kerway/_kerwayBanner.scss */
+/* line 65, ../sass/kerway/_kerwayBanner.scss */
 .mouseButton {
   margin: 0 auto;
   width: 24px;
@@ -830,7 +830,7 @@ footer .contactName .copyright {
   padding-top: 30px;
 }
 
-/* line 10, ../sass/kerway.scss */
+/* line 11, ../sass/kerway.scss */
 footer {
   background-color: #fff;
 }
