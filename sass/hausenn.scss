@@ -2,4 +2,8 @@
 @import "./partial/_menu.scss";
 @import "./partial/_contactUs.scss";
 @import "./hausenn/_hausennMain.scss";
-@import "_footer.scss";
+@import "./partial/_footer.scss";
+
+footer {
+  background-color: #dacbc7;
+}

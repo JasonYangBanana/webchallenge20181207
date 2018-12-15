@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -144,7 +145,7 @@ table {
 .menu {
   z-index: 1;
   height: 100vh;
-  max-width: 590px;
+  width: 590px;
   background-color: #000;
   position: fixed;
   opacity: 0.8;
@@ -774,4 +775,62 @@ body {
 #kerwayWorks .kerwayWorksFliter .arrowUp {
   color: white;
   font-size: 40px;
+}
+
+/* line 1, ../sass/partial/_footer.scss */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 245px;
+}
+/* line 6, ../sass/partial/_footer.scss */
+footer .contactInfo {
+  font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 3px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 15, ../sass/partial/_footer.scss */
+footer .contactInfo .address {
+  padding: 120px 0 0;
+}
+/* line 20, ../sass/partial/_footer.scss */
+footer a {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  color: #000;
+}
+/* line 30, ../sass/partial/_footer.scss */
+footer .email {
+  padding-top: 10px;
+}
+/* line 34, ../sass/partial/_footer.scss */
+footer .contactName {
+  width: 80%;
+  margin: 75px auto 0;
+  text-align: right;
+}
+/* line 39, ../sass/partial/_footer.scss */
+footer .contactName img {
+  width: 312px;
+}
+/* line 43, ../sass/partial/_footer.scss */
+footer .contactName .copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-top: 30px;
+}
+
+/* line 10, ../sass/kerway.scss */
+footer {
+  background-color: #fff;
 }

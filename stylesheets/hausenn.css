@@ -146,7 +146,7 @@ table {
 .menu {
   z-index: 1;
   height: 100vh;
-  max-width: 590px;
+  width: 590px;
   background-color: #000;
   position: fixed;
   opacity: 0.8;
@@ -499,14 +499,13 @@ a:hover {
   transform: translateX(400px) translateY(2200px);
 }
 
-/* line 1, ../sass/_footer.scss */
+/* line 1, ../sass/partial/_footer.scss */
 footer {
-  background-color: #dacbc7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
 }
-/* line 7, ../sass/_footer.scss */
+/* line 6, ../sass/partial/_footer.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -516,37 +515,44 @@ footer .contactInfo {
   width: 80%;
   margin: 0 auto;
 }
-/* line 16, ../sass/_footer.scss */
+/* line 15, ../sass/partial/_footer.scss */
 footer .contactInfo .address {
   padding: 120px 0 0;
 }
-/* line 21, ../sass/_footer.scss */
+/* line 20, ../sass/partial/_footer.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
   font-size: 13px;
   letter-spacing: 3px;
+  text-decoration: none;
+  color: #000;
 }
-/* line 29, ../sass/_footer.scss */
+/* line 30, ../sass/partial/_footer.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 33, ../sass/_footer.scss */
+/* line 34, ../sass/partial/_footer.scss */
 footer .contactName {
   width: 80%;
   margin: 75px auto 0;
   text-align: right;
 }
-/* line 38, ../sass/_footer.scss */
+/* line 39, ../sass/partial/_footer.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 42, ../sass/_footer.scss */
+/* line 43, ../sass/partial/_footer.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 3px;
   padding-top: 30px;
+}
+
+/* line 7, ../sass/hausenn.scss */
+footer {
+  background-color: #dacbc7;
 }

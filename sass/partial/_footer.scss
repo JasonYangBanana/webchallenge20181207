@@ -1,5 +1,4 @@
 footer {
-  background-color: $primary-color;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
@@ -24,6 +23,8 @@ footer {
     font-weight: 100;
     font-size: 13px;
     letter-spacing: 3px;
+    text-decoration: none;
+    color: #000;
   }
 
   .email {

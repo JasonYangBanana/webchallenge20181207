@@ -5,3 +5,8 @@
 @import "./kerway/_kerwayBanner.scss";
 @import "./kerway/_kerwayMain.scss";
 @import "./kerway/_kerwayWorks";
+@import "./partial/_footer.scss";
+
+footer {
+  background-color: #fff;
+}
