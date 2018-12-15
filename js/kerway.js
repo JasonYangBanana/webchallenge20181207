@@ -45,9 +45,6 @@ $(document).ready(function () {
         }, 1000);
     });
     $('.nineDots').click(function () {
-        $grid.isotope({
-            filter: '*'
-        });
         $('html, body').animate({
             scrollTop: $("#kerwayWorks").offset().top
         }, 1000);
