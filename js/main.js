@@ -1,10 +1,22 @@
 let menu = document.querySelector(".menu")
+let contactUsImage = document.querySelector(".contantUsImage")
+let contactUs = document.querySelector(".contactUs")
 let menuStatus = false
-
+let contactUsStatus = false
 let buggerMenu = document.querySelector(".burgerMenu")
+contactUsImage.addEventListener("click", function() {
+  burgerMenuChange()
+  contactUs.style.right = "0";
+  contactUsStatus = !contactUsStatus
+})
 buggerMenu.addEventListener("click", function() {
   burgerMenuChange()
-  animationMenu()
+  if (contactUsStatus) {
+    contactUs.style.right = "-100vw";
+    contactUsStatus = !contactUsStatus
+  } else {
+    animationMenu()
+  }
 })
 
 function burgerMenuChange() {
