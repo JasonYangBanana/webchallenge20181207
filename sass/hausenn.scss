@@ -1,11 +1,12 @@
-@import "./partial/_reset.scss";
-@import "./partial/_mixin.scss";
-@import "./partial/_menu.scss";
-@import "./partial/_burgerMenu.scss";
-@import "./partial/_contactUs.scss";
-@import "./hausenn/_hausennBanner.scss";
-@import "./hausenn/_hausennMain.scss";
-@import "./partial/_footer.scss";
+@import "./partial/reset";
+@import "./partial/mixin";
+@import "./partial/menu";
+@import "./partial/burgerMenu";
+@import "./partial/contactUs";
+@import "./hausenn/hausennBanner";
+@import "./hausenn/hausennMain";
+@import "./hausenn/hausennAccordin";
+@import "./partial/footer";
 
 footer {
   background-color: #dacbc7;

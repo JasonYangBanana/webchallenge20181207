@@ -55,3 +55,11 @@ function animationMenu() {
 //   let shadowLevel = (Math.abs(xMove) + Math.abs(yMove)) / 2 / moveRect * 3
 //   kerwayBackground.style.transform = `matrix(1.03, 0, 0, 1.03, ${xMove}, ${yMove})`
 // })
+
+$(document).ready(function () {
+  $('.accordion').accordion({
+    "transitionSpeed": 500,
+    "transitionEasing": 'ease-in-out',
+    "singleOpen": true
+  });
+});

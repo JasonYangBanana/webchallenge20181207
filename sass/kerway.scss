@@ -1,12 +1,12 @@
-@import "./partial/_reset.scss";
-@import "./partial/_menu.scss";
-@import "./partial/_mixin.scss";
-@import "./partial/_burgerMenu.scss";
-@import "./partial/_contactUs.scss";
-@import "./kerway/_kerwayBanner.scss";
-@import "./kerway/_kerwayMain.scss";
-@import "./kerway/_kerwayWorks";
-@import "./partial/_footer.scss";
+@import "./partial/reset";
+@import "./partial/menu";
+@import "./partial/mixin";
+@import "./partial/burgerMenu";
+@import "./partial/contactUs";
+@import "./kerway/kerwayBanner";
+@import "./kerway/kerwayMain";
+@import "./kerway/kerwayWorks";
+@import "./partial/footer";
 
 footer {
   background-color: #fff;
