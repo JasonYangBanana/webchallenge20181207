@@ -1,15 +1,18 @@
 body{
-    .parallax{
-        .accordion{
-            div[data-control]{
-                font-size: 40px;
-                font-weight: 600;
+    .accordion{
+        div[data-control]{
+            font-size: 40px;
+            font-weight: 600;
+            padding: 2px 8px;
+        }
+        ul{
+            padding-left: 16px;
+            .subtitle{
+                font-size: 28px;
                 padding: 2px 8px;
-            }
-            ul{
-                padding-left: 16px;
-                li{
+                .item{
                     font-size: 28px;
+                    font-weight: 300;
                     padding: 2px 8px;
                 }
             }

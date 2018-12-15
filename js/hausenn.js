@@ -62,4 +62,11 @@ $(document).ready(function () {
     "transitionEasing": 'ease-in-out',
     "singleOpen": true
   });
+  $('.subaccordion').accordion({
+    "transitionSpeed": 100,
+    "transitionEasing": 'ease-in-out',
+    "singleOpen": true,
+    "controlElement": '[data-subcontrol]',
+    "contentElement": '[data-subcontent]'
+  });
 });

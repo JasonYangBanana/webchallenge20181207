@@ -624,16 +624,21 @@ a:hover {
   transform: translateX(400px) translateY(2200px);
 }
 
-body .parallax .accordion div[data-control] {
+body .accordion div[data-control] {
   font-size: 40px;
   font-weight: 600;
   padding: 2px 8px;
 }
-body .parallax .accordion ul {
+body .accordion ul {
   padding-left: 16px;
 }
-body .parallax .accordion ul li {
+body .accordion ul .subtitle {
   font-size: 28px;
+  padding: 2px 8px;
+}
+body .accordion ul .subtitle .item {
+  font-size: 28px;
+  font-weight: 300;
   padding: 2px 8px;
 }
 
