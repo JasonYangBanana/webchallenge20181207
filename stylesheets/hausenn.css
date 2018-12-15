@@ -499,6 +499,197 @@ a:hover {
   transform: translateX(400px) translateY(2200px);
 }
 
+/* line 2, ../sass/hausenn/_hausennGallery.scss */
+body {
+  margin: 0;
+}
+
+/* line 6, ../sass/hausenn/_hausennGallery.scss */
+* {
+  box-sizing: border-box;
+}
+
+/*accordion*/
+/* line 12, ../sass/hausenn/_hausennGallery.scss */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+/* line 25, ../sass/hausenn/_hausennGallery.scss */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* line 29, ../sass/hausenn/_hausennGallery.scss */
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+/*album*/
+/* line 38, ../sass/hausenn/_hausennGallery.scss */
+.row > .column {
+  padding: 0 8px;
+}
+
+/* line 42, ../sass/hausenn/_hausennGallery.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 48, ../sass/hausenn/_hausennGallery.scss */
+.column {
+  float: left;
+  width: 12%;
+  padding: 0 10px 0 0;
+}
+
+/* line 53, ../sass/hausenn/_hausennGallery.scss */
+.column::after {
+  padding: 0;
+}
+
+/* The Modal (background) */
+/* line 59, ../sass/hausenn/_hausennGallery.scss */
+.modal {
+  display: block;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #f3eff1;
+}
+
+/* Modal Content */
+/* line 72, ../sass/hausenn/_hausennGallery.scss */
+.modal-content {
+  position: relative;
+  margin-left: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+/* line 81, ../sass/hausenn/_hausennGallery.scss */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* line 90, ../sass/hausenn/_hausennGallery.scss */
+.close:hover,
+.close:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 97, ../sass/hausenn/_hausennGallery.scss */
+.mySlides {
+  display: none;
+}
+
+/* line 101, ../sass/hausenn/_hausennGallery.scss */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+/* line 106, ../sass/hausenn/_hausennGallery.scss */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+/* line 124, ../sass/hausenn/_hausennGallery.scss */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* line 130, ../sass/hausenn/_hausennGallery.scss */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+/* line 136, ../sass/hausenn/_hausennGallery.scss */
+.numbertext {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* line 144, ../sass/hausenn/_hausennGallery.scss */
+img {
+  margin-bottom: -4px;
+}
+
+/* line 148, ../sass/hausenn/_hausennGallery.scss */
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+}
+
+/* line 153, ../sass/hausenn/_hausennGallery.scss */
+.demo {
+  opacity: 0.6;
+}
+
+/* line 157, ../sass/hausenn/_hausennGallery.scss */
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* line 162, ../sass/hausenn/_hausennGallery.scss */
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+/* line 166, ../sass/hausenn/_hausennGallery.scss */
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* line 1, ../sass/partial/_footer.scss */
 footer {
   display: grid;
@@ -552,7 +743,7 @@ footer .contactName .copyright {
   padding-top: 30px;
 }
 
-/* line 7, ../sass/hausenn.scss */
+/* line 8, ../sass/hausenn.scss */
 footer {
   background-color: #dacbc7;
 }
