@@ -649,7 +649,7 @@ body .accordionLists div[data-accordion-group] .accordion div[data-control] {
   padding: 2px 8px;
 }
 body .accordionLists div[data-accordion-group] .accordion ul {
-  padding-left: 16px;
+  padding-left: 24px;
 }
 body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
   font-size: 28px;
@@ -658,7 +658,7 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
 body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   font-size: 28px;
   font-weight: 300;
-  padding: 2px 8px;
+  padding: 4px 8px;
 }
 
 footer {

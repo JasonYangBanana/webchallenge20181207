@@ -73,7 +73,7 @@ $(document).ready(function () {
     "singleOpen": true
   });
   $('.subaccordion').accordion({
-    "transitionSpeed": 100,
+    "transitionSpeed": 500,
     "transitionEasing": 'ease-in-out',
     "singleOpen": true,
     "controlElement": '[data-subcontrol]',
