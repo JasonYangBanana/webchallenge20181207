@@ -1,0 +1,67 @@
+body {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hausennBackground {
+  @include bannerBackground("../images/hausenn/header_photo_background.jpg");
+}
+
+.hausennBannerMain {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hausennBannerContent {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    left: calc(50% - 450px);
+    width: 175px;
+    background-color: #fff;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .heroImage {
+    width: 510px;
+    height: 510px;
+    @media (max-width: 566px) {
+      width: 320px;
+      height: 320px;
+    }
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    width: 175px;
+    background-color: #fff;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+.mouseButton {
+  @include mouseButtonStyle;
+}

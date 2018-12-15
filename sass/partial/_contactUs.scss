@@ -12,3 +12,15 @@
     height: auto;
   }
 }
+
+.contantUsImage {
+  z-index: 2;
+  position: fixed;
+  top: calc(50vh - 190px);
+  right: 0;
+  width: 100px;
+  height: 164px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
