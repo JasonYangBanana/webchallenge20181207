@@ -45,6 +45,16 @@ $(document).ready(function () {
         }, 1000);
     });
     $('.nineDots').click(function () {
+        $grid.isotope({
+            filter: '*'
+        });
+        $('.kerwaySubtitle').text('Works');
+        $('.kerwaySubtitle').append('<br><span class="kerwayChineseSubtitle">作品</span>');
+        $('html, body').animate({
+            scrollTop: $("#kerwayWorks").offset().top
+        }, 1000);
+    });
+    $('.arrowUp').click(function () {
         $('html, body').animate({
             scrollTop: $("#kerwayWorks").offset().top
         }, 1000);
