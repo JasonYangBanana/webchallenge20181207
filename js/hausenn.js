@@ -57,6 +57,16 @@ function animationMenu() {
 // })
 
 $(document).ready(function () {
+  //想辦法抓目標照片
+  $('.parallax__layer--back').click(function () {
+    $('.accordionLists').addClass('show');
+    $('.burgerMenu').addClass('open');
+    menuStatus = !menuStatus;
+  });
+  $('.burgerMenu').click(function () {
+    $('.accordionLists').removeClass('show');
+  });
+  
   $('.accordion').accordion({
     "transitionSpeed": 500,
     "transitionEasing": 'ease-in-out',

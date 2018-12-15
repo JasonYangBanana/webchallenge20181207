@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-sclae=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HausennPage</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheets/hausenn.css">
 </head>
 
@@ -111,12 +112,12 @@
       </div>
       <div class="collections parallax__group">
         <div class="parallax__layer--fore">
-          <div class="subTitle">COLLECTIONS</div>
+          <div class="collectionsJs subTitle">COLLECTIONS</div>
           <div class="rectTitleCn">女裝</div>
           <div class="blackBlock"></div>
         </div>
         <div class="parallax__layer--base">
-          <div class="banner">
+          <div class="collectionsJs banner">
             <img src="images/hausenn/banner_img4.png" alt="hausenn picture">
           </div>
         </div>
@@ -157,83 +158,88 @@
       </div>
     </footer>
   </div>
-  
+
   <!-- 手風琴特效 -->
-  <div data-accordion-group>
-    <div class="accordion" data-accordion>
-      <div data-control>COUTURE</div>
-      <ul class="couture" data-content>
-        <li class="subtitle">COUTURE1</li>
-        <li class="subtitle">COUTURE2</li>
-        <li class="subtitle">COUTURE3</li>
-        <li class="subtitle">COUTURE4</li>
-        <li class="subtitle">COUTURE5</li>
-      </ul>
+  <div class="accordionLists">
+    <div class="accordionListsClose">
+      <i class="fas fa-times"></i>
     </div>
-    <div class="accordion" data-accordion>
-      <div data-control>COLLECTIONS</div>
-      <ul class="collections" data-content data-accordion-group>
-        <li class="subaccordion" data-accordion>
-          <div class="subtitle" data-subcontrol>COLLECTION1</div>
-          <ul class="collections" data-subcontent>
-            <li class="item">PHOTO1-1</li>
-            <li class="item">PHOTO1-2</li>
-            <li class="item">PHOTO1-3</li>
-            <li class="item">PHOTO1-4</li>
-            <li class="item">PHOTO1-5</li>
-          </ul>
-        </li>
-        <li class="subaccordion" data-accordion>
-          <div class="subtitle" data-subcontrol>COLLECTION2</div>
-          <ul class="collections" data-subcontent>
-            <li class="item">PHOTO2-1</li>
-            <li class="item">PHOTO2-2</li>
-            <li class="item">PHOTO2-3</li>
-            <li class="item">PHOTO2-4</li>
-            <li class="item">PHOTO2-5</li>
-          </ul>
-        </li>
-        <li class="subaccordion" data-accordion>
-          <div class="subtitle" data-subcontrol>COLLECTION3</div>
-          <ul class="collections" data-subcontent>
-            <li class="item">PHOTO3-1</li>
-            <li class="item">PHOTO3-2</li>
-            <li class="item">PHOTO3-3</li>
-            <li class="item">PHOTO3-4</li>
-            <li class="item">PHOTO3-5</li>
-          </ul>
-        </li>
-        <li class="subaccordion" data-accordion>
-          <div class="subtitle" data-subcontrol>COLLECTION4</div>
-          <ul class="collections" data-subcontent>
-            <li class="item">PHOTO4-1</li>
-            <li class="item">PHOTO4-2</li>
-            <li class="item">PHOTO4-3</li>
-            <li class="item">PHOTO4-4</li>
-            <li class="item">PHOTO4-5</li>
-          </ul>
-        </li>
-        <li class="subaccordion" data-accordion>
-          <div class="subtitle" data-subcontrol>COLLECTION5</div>
-          <ul class="collections" data-subcontent>
-            <li class="item">PHOTO5-1</li>
-            <li class="item">PHOTO5-2</li>
-            <li class="item">PHOTO5-3</li>
-            <li class="item">PHOTO5-4</li>
-            <li class="item">PHOTO5-5</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="accordion" data-accordion>
-      <div data-control>SEASONS</div>
-      <ul class="seasons" data-content>
-        <li class="subtitle">SEASON1</li>
-        <li class="subtitle">SEASON2</li>
-        <li class="subtitle">SEASON3</li>
-        <li class="subtitle">SEASON4</li>
-        <li class="subtitle">SEASON5</li>
-      </ul>
+    <div data-accordion-group>
+      <div class="accordion" data-accordion>
+        <div data-control>COUTURE</div>
+        <ul class="couture" data-content>
+          <li class="subtitle">COUTURE1</li>
+          <li class="subtitle">COUTURE2</li>
+          <li class="subtitle">COUTURE3</li>
+          <li class="subtitle">COUTURE4</li>
+          <li class="subtitle">COUTURE5</li>
+        </ul>
+      </div>
+      <div class="accordion" data-accordion>
+        <div data-control>COLLECTIONS</div>
+        <ul class="collections" data-content data-accordion-group>
+          <li class="subaccordion" data-accordion>
+            <div class="subtitle" data-subcontrol>COLLECTION1</div>
+            <ul class="collections" data-subcontent>
+              <li class="item">PHOTO1-1</li>
+              <li class="item">PHOTO1-2</li>
+              <li class="item">PHOTO1-3</li>
+              <li class="item">PHOTO1-4</li>
+              <li class="item">PHOTO1-5</li>
+            </ul>
+          </li>
+          <li class="subaccordion" data-accordion>
+            <div class="subtitle" data-subcontrol>COLLECTION2</div>
+            <ul class="collections" data-subcontent>
+              <li class="item">PHOTO2-1</li>
+              <li class="item">PHOTO2-2</li>
+              <li class="item">PHOTO2-3</li>
+              <li class="item">PHOTO2-4</li>
+              <li class="item">PHOTO2-5</li>
+            </ul>
+          </li>
+          <li class="subaccordion" data-accordion>
+            <div class="subtitle" data-subcontrol>COLLECTION3</div>
+            <ul class="collections" data-subcontent>
+              <li class="item">PHOTO3-1</li>
+              <li class="item">PHOTO3-2</li>
+              <li class="item">PHOTO3-3</li>
+              <li class="item">PHOTO3-4</li>
+              <li class="item">PHOTO3-5</li>
+            </ul>
+          </li>
+          <li class="subaccordion" data-accordion>
+            <div class="subtitle" data-subcontrol>COLLECTION4</div>
+            <ul class="collections" data-subcontent>
+              <li class="item">PHOTO4-1</li>
+              <li class="item">PHOTO4-2</li>
+              <li class="item">PHOTO4-3</li>
+              <li class="item">PHOTO4-4</li>
+              <li class="item">PHOTO4-5</li>
+            </ul>
+          </li>
+          <li class="subaccordion" data-accordion>
+            <div class="subtitle" data-subcontrol>COLLECTION5</div>
+            <ul class="collections" data-subcontent>
+              <li class="item">PHOTO5-1</li>
+              <li class="item">PHOTO5-2</li>
+              <li class="item">PHOTO5-3</li>
+              <li class="item">PHOTO5-4</li>
+              <li class="item">PHOTO5-5</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="accordion" data-accordion>
+        <div data-control>SEASONS</div>
+        <ul class="seasons" data-content>
+          <li class="subtitle">SEASON1</li>
+          <li class="subtitle">SEASON2</li>
+          <li class="subtitle">SEASON3</li>
+          <li class="subtitle">SEASON4</li>
+          <li class="subtitle">SEASON5</li>
+        </ul>
+      </div>
     </div>
   </div>
 

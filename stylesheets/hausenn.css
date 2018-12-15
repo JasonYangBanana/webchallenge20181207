@@ -624,19 +624,38 @@ a:hover {
   transform: translateX(400px) translateY(2200px);
 }
 
-body .accordion div[data-control] {
+body .accordionLists {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  right: -100vw;
+  bottom: 0;
+  transition: 2s;
+  background-color: black;
+  opacity: 0.8;
+}
+body .accordionLists.show {
+  right: 0;
+}
+body .accordionLists div[data-accordion-group] {
+  color: white;
+  margin-left: 50px;
+  transform: translateY(150px);
+}
+body .accordionLists div[data-accordion-group] .accordion div[data-control] {
   font-size: 40px;
   font-weight: 600;
   padding: 2px 8px;
 }
-body .accordion ul {
+body .accordionLists div[data-accordion-group] .accordion ul {
   padding-left: 16px;
 }
-body .accordion ul .subtitle {
+body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
   font-size: 28px;
   padding: 2px 8px;
 }
-body .accordion ul .subtitle .item {
+body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   font-size: 28px;
   font-weight: 300;
   padding: 2px 8px;

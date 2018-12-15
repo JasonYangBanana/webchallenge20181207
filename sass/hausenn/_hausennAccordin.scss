@@ -1,19 +1,38 @@
 body{
-    .accordion{
-        div[data-control]{
-            font-size: 40px;
-            font-weight: 600;
-            padding: 2px 8px;
+    .accordionLists {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        right: -100vw;
+        bottom: 0;
+        transition: 2s;
+        background-color: black;
+        opacity: 0.8;
+        &.show{
+            right: 0;
         }
-        ul{
-            padding-left: 16px;
-            .subtitle{
-                font-size: 28px;
-                padding: 2px 8px;
-                .item{
-                    font-size: 28px;
-                    font-weight: 300;
+        div[data-accordion-group]{
+            color: white;
+            margin-left: 50px;
+            transform: translateY(150px);
+            .accordion{
+                div[data-control]{
+                    font-size: 40px;
+                    font-weight: 600;
                     padding: 2px 8px;
+                }
+                ul{
+                    padding-left: 16px;
+                    .subtitle{
+                        font-size: 28px;
+                        padding: 2px 8px;
+                        .item{
+                            font-size: 28px;
+                            font-weight: 300;
+                            padding: 2px 8px;
+                        }
+                    }
                 }
             }
         }
