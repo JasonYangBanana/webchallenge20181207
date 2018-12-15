@@ -79,7 +79,7 @@ a:hover {
 
 /* line 78, ../sass/_hausennMain.scss */
 .section2 {
-  height: 8375px;
+  height: 8615px;
 }
 
 /* line 86, ../sass/_hausennMain.scss */
@@ -104,7 +104,7 @@ body {
 /* line 108, ../sass/_hausennMain.scss */
 .parallax__group {
   position: relative;
-  height: 100vh;
+  height: 768px;
   box-sizing: border-box;
   transform-style: preserve-3d;
 }
