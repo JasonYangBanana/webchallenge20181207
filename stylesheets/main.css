@@ -146,7 +146,7 @@ table {
   height: 100vh;
   max-width: 590px;
   background-color: #000;
-  position: absolute;
+  position: fixed;
   opacity: 0.8;
   padding: 50px 0 120px 145px;
   box-sizing: border-box;
@@ -230,15 +230,16 @@ table {
 .contactUs {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   right: -100vw;
   transition: 2s;
+  background-color: #fff;
 }
-/* line 9, ../sass/_contactUs.scss */
+/* line 10, ../sass/_contactUs.scss */
 .contactUs img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* line 1, ../sass/_kerwayBanner.scss */
@@ -473,27 +474,27 @@ body::-webkit-scrollbar {
   overflow-y: auto;
 }
 
-/* line 13, ../sass/_kerwayMain.scss */
+/* line 11, ../sass/_kerwayMain.scss */
 .kerwayTitle {
   width: 192px;
   margin: 0 auto;
   height: 32px;
   margin-bottom: 175px;
 }
-/* line 19, ../sass/_kerwayMain.scss */
+/* line 17, ../sass/_kerwayMain.scss */
 .kerwayTitle img {
   width: 100%;
   height: 100%;
 }
 
-/* line 25, ../sass/_kerwayMain.scss */
+/* line 23, ../sass/_kerwayMain.scss */
 .group1 {
   width: 100%;
   position: relative;
   margin-bottom: 300px;
 }
 
-/* line 29, ../sass/_kerwayMain.scss */
+/* line 27, ../sass/_kerwayMain.scss */
 .group2 {
   width: 100%;
   position: relative;
@@ -503,7 +504,7 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-/* line 36, ../sass/_kerwayMain.scss */
+/* line 34, ../sass/_kerwayMain.scss */
 .group3 {
   width: 100%;
   position: relative;
@@ -512,12 +513,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-/* line 42, ../sass/_kerwayMain.scss */
+/* line 40, ../sass/_kerwayMain.scss */
 .kerwayHero {
   width: 100%;
 }
 
-/* line 46, ../sass/_kerwayMain.scss */
+/* line 44, ../sass/_kerwayMain.scss */
 .bannerSlogan {
   font-size: 44px;
   font-family: sans-serif;
@@ -528,7 +529,7 @@ body::-webkit-scrollbar {
   top: -370px;
 }
 
-/* line 53, ../sass/_kerwayMain.scss */
+/* line 51, ../sass/_kerwayMain.scss */
 .group2Dash {
   width: 36px;
   height: 4px;
@@ -538,7 +539,7 @@ body::-webkit-scrollbar {
   top: -60px;
 }
 
-/* line 62, ../sass/_kerwayMain.scss */
+/* line 60, ../sass/_kerwayMain.scss */
 .group3Dash {
   width: 36px;
   height: 4px;
@@ -548,7 +549,7 @@ body::-webkit-scrollbar {
   top: 270px;
 }
 
-/* line 71, ../sass/_kerwayMain.scss */
+/* line 69, ../sass/_kerwayMain.scss */
 .contextTitle {
   position: absolute;
   left: 70px;
@@ -558,7 +559,7 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 77, ../sass/_kerwayMain.scss */
+/* line 75, ../sass/_kerwayMain.scss */
 .contextSlogn {
   position: absolute;
   font-size: 19px;
@@ -570,7 +571,7 @@ body::-webkit-scrollbar {
   left: 380px;
 }
 
-/* line 85, ../sass/_kerwayMain.scss */
+/* line 83, ../sass/_kerwayMain.scss */
 .contentStyle {
   font-size: 14px;
   font-family: sans-serif;
@@ -583,7 +584,7 @@ body::-webkit-scrollbar {
   margin-left: 70px;
 }
 
-/* line 94, ../sass/_kerwayMain.scss */
+/* line 92, ../sass/_kerwayMain.scss */
 .jobsWords {
   font-size: 14px;
   font-family: sans-serif;
@@ -591,27 +592,27 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 98, ../sass/_kerwayMain.scss */
+/* line 96, ../sass/_kerwayMain.scss */
 .designer {
   position: relative;
 }
-/* line 101, ../sass/_kerwayMain.scss */
+/* line 99, ../sass/_kerwayMain.scss */
 .designer img {
   width: 390px;
   height: 520px;
 }
-/* line 105, ../sass/_kerwayMain.scss */
+/* line 103, ../sass/_kerwayMain.scss */
 .designer img:first-child {
   margin-right: 200px;
 }
-/* line 109, ../sass/_kerwayMain.scss */
+/* line 107, ../sass/_kerwayMain.scss */
 .designer img:nth-child(2) {
   position: absolute;
   z-index: -1;
   top: 100px;
   left: 100px;
 }
-/* line 116, ../sass/_kerwayMain.scss */
+/* line 114, ../sass/_kerwayMain.scss */
 .designer img:nth-child(3) {
   position: absolute;
   z-index: -2;
@@ -619,7 +620,7 @@ body::-webkit-scrollbar {
   left: 200px;
 }
 
-/* line 125, ../sass/_kerwayMain.scss */
+/* line 123, ../sass/_kerwayMain.scss */
 .context {
   position: relative;
 }
