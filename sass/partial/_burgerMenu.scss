@@ -1,0 +1,91 @@
+.burgerMenu {
+  z-index: 2;
+  width: 39px;
+  height: 19px;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  @media (max-width: 566px) {
+    top: 35px;
+    left: 20px;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 16.5px;
+    background: #fff;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out;
+  }
+
+  & span:nth-child(even) {
+    left: 60%;
+    border-radius: 0 5px 5px 0;
+  }
+
+  & span:nth-child(odd) {
+    left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  & span:nth-child(1),
+  & span:nth-child(2) {
+    top: 0;
+  }
+
+  & span:nth-child(3),
+  & span:nth-child(4) {
+    top: 8px;
+  }
+
+  & span:nth-child(5),
+  & span:nth-child(6) {
+    top: 16px;
+  }
+
+  &.open span:nth-child(1),
+  &.open span:nth-child(6) {
+    transform: rotate(45deg);
+  }
+
+  &.open span:nth-child(2),
+  &.open span:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+
+  &.open span:nth-child(1) {
+    left: 4px;
+    top: 7px;
+  }
+
+  &.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+  }
+
+  &.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  &.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  &.open span:nth-child(5) {
+    left: 4px;
+    top: 18px;
+  }
+
+  &.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 18px;
+  }
+}
