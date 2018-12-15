@@ -1,4 +1,7 @@
-.kerwayWorks{
+body{
+    box-sizing: border-box;
+}
+#kerwayWorks{
     margin-top: 80px;
     .kerwayTitle{
         color: white;
@@ -44,6 +47,76 @@
             img{
                 max-width: 100%;
             }
+        }
+    }
+    .kerwayWorksFliter{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 40px;
+        // overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .nineDots{
+            color: white;
+            font-size: 40px;
+        }
+        .filters{
+            display: flex;
+            justify-content: space-around;
+            .item{
+                margin: 0 20px;
+                .filterKinds{
+                    color: white;
+                    font-size: 20px;
+                }
+                .listContainer{
+                    margin-top: 16px;
+                    padding-top: 10px;
+                    background-color: #fff;
+                    li[data-filter] {
+                        color: rgba(0, 0, 0, 0.721);
+                        padding: 8px 10px;
+                    }
+                    .filterSubtitle{
+                        color: black;
+                        font-weight: 600;
+                        font-size: 18px;
+                        padding: 8px 10px;
+                    }
+                }
+            }
+            .workProjects {
+                transition: 1s ease-in-out;
+                &:hover {
+                    transform: translateY(-426px);
+                }
+            }
+            .photographers {
+                transition: 1s ease-in-out;
+                &:hover {
+                    transform: translateY(-390px);
+                }
+            }
+            .styleists {
+                transition: 1s ease-in-out;
+                &:hover {
+                    transform: translateY(-134px);
+                }
+            }
+            .directors {
+                transition: 1s ease-in-out;
+                &:hover {
+                    transform: translateY(-70px);
+                }
+            }
+        }
+        .arrowUp{
+            color: white;
+            font-size: 40px;
         }
     }
 }

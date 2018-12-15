@@ -625,11 +625,16 @@ body::-webkit-scrollbar {
 }
 
 /* line 1, ../sass/_kerwayWorks.scss */
-.kerwayWorks {
+body {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/_kerwayWorks.scss */
+#kerwayWorks {
   margin-top: 80px;
 }
-/* line 3, ../sass/_kerwayWorks.scss */
-.kerwayWorks .kerwayTitle {
+/* line 6, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayTitle {
   color: white;
   margin-bottom: 80px;
   text-align: center;
@@ -637,8 +642,8 @@ body::-webkit-scrollbar {
   font-size: 40pt;
   font-family: cursive;
 }
-/* line 11, ../sass/_kerwayWorks.scss */
-.kerwayWorks .kerwaySubtitle {
+/* line 14, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwaySubtitle {
   color: white;
   font-family: sans-serif;
   font-weight: 600;
@@ -648,8 +653,8 @@ body::-webkit-scrollbar {
   margin-bottom: 30px;
   margin-left: 50px;
 }
-/* line 20, ../sass/_kerwayWorks.scss */
-.kerwayWorks .kerwaySubtitle::before {
+/* line 23, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwaySubtitle::before {
   content: '';
   display: block;
   background-color: #fff;
@@ -657,28 +662,114 @@ body::-webkit-scrollbar {
   width: 150px;
   margin-bottom: 30px;
 }
-/* line 28, ../sass/_kerwayWorks.scss */
-.kerwayWorks .kerwaySubtitle .kerwayChineseSubtitle {
+/* line 31, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwaySubtitle .kerwayChineseSubtitle {
   font-size: 32pt;
 }
-/* line 32, ../sass/_kerwayWorks.scss */
-.kerwayWorks .grid {
+/* line 35, ../sass/_kerwayWorks.scss */
+#kerwayWorks .grid {
   margin: 0 auto;
   max-width: 1200px;
 }
-/* line 35, ../sass/_kerwayWorks.scss */
-.kerwayWorks .grid::after {
+/* line 38, ../sass/_kerwayWorks.scss */
+#kerwayWorks .grid::after {
   content: '';
   display: block;
   clear: both;
 }
-/* line 40, ../sass/_kerwayWorks.scss */
-.kerwayWorks .grid .grid-item {
+/* line 43, ../sass/_kerwayWorks.scss */
+#kerwayWorks .grid .grid-item {
   padding: 25px;
   float: left;
   width: 40%;
 }
-/* line 44, ../sass/_kerwayWorks.scss */
-.kerwayWorks .grid .grid-item img {
+/* line 47, ../sass/_kerwayWorks.scss */
+#kerwayWorks .grid .grid-item img {
   max-width: 100%;
+}
+/* line 52, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 63, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .nineDots {
+  color: white;
+  font-size: 40px;
+}
+/* line 67, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 70, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .item {
+  margin: 0 20px;
+}
+/* line 72, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .item .filterKinds {
+  color: white;
+  font-size: 20px;
+}
+/* line 76, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer {
+  margin-top: 16px;
+  padding-top: 10px;
+  background-color: #fff;
+}
+/* line 80, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer li[data-filter] {
+  color: rgba(0, 0, 0, 0.721);
+  padding: 8px 10px;
+}
+/* line 84, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .item .listContainer .filterSubtitle {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+/* line 92, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .workProjects {
+  transition: 1s ease-in-out;
+}
+/* line 94, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .workProjects:hover {
+  transform: translateY(-426px);
+}
+/* line 98, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .photographers {
+  transition: 1s ease-in-out;
+}
+/* line 100, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .photographers:hover {
+  transform: translateY(-390px);
+}
+/* line 104, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .styleists {
+  transition: 1s ease-in-out;
+}
+/* line 106, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .styleists:hover {
+  transform: translateY(-134px);
+}
+/* line 110, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .directors {
+  transition: 1s ease-in-out;
+}
+/* line 112, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .filters .directors:hover {
+  transform: translateY(-70px);
+}
+/* line 117, ../sass/_kerwayWorks.scss */
+#kerwayWorks .kerwayWorksFliter .arrowUp {
+  color: white;
+  font-size: 40px;
 }
