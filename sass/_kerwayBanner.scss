@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
 }
 
 .burgerMenu {
+  z-index: 2;
   width: 39px;
   height: 19px;
   position: fixed;
@@ -110,12 +111,12 @@ body::-webkit-scrollbar {
 
   &.open span:nth-child(5) {
     left: 4px;
-    top: 29px;
+    top: 18px;
   }
 
   &.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 29px;
+    top: 18px;
   }
 }
 
@@ -158,8 +159,9 @@ body::-webkit-scrollbar {
 }
 
 .contantUsImage {
+  z-index: 2;
   position: fixed;
-  top: calc(50% - 164px);
+  top: calc(50vh - 190px);
   right: 0;
   width: 100px;
   height: 164px;
