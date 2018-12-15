@@ -47,20 +47,6 @@ a {
   animation-duration: 10s;
   animation-iteration-count: 3;
 }
-// html {
-//     height: 100%;
-//     overflow: hidden;
-// }
-// body {
-//     margin:0;
-//     padding:0;
-//     perspective: 1px;
-//     transform-style: preserve-3d;
-//     height: 100%;
-//     overflow-y: scroll;
-//     overflow-x: hidden;
-//     font-family: Nunito;
-//   }
 
 .hausennTitle {
   width: 200px;
@@ -262,56 +248,5 @@ a {
 
   .banner2 {
     transform: translateX(400px) translateY(2200px);
-  }
-}
-
-footer {
-  background-color: $primary-color;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 245px;
-
-  .contactInfo {
-    font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    letter-spacing: 3px;
-    width: 80%;
-    margin: 0 auto;
-
-    .address {
-      padding: 120px 0 0;
-    }
-  }
-
-  a {
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 13px;
-    letter-spacing: 3px;
-  }
-
-  .email {
-    padding-top: 10px;
-  }
-
-  .contactName {
-    width: 80%;
-    margin: 75px auto 0;
-    text-align: right;
-
-    img {
-      width: 312px;
-    }
-
-    .copyright {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-size: 14px;
-      letter-spacing: 3px;
-      padding-top: 30px;
-    }
   }
 }

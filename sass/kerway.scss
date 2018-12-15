@@ -1,4 +1,7 @@
-@import "_mixin.scss";
-@import "_kerwayBanner.scss";
-@import "_kerwayMain.scss";
-@import "_kerwayWorks";
+@import "./partial/_reset.scss";
+@import "./partial/_menu.scss";
+@import "./partial/_contactUs.scss";
+@import "./partial/_mixin.scss";
+@import "./kerway/_kerwayBanner.scss";
+@import "./kerway/_kerwayMain.scss";
+@import "./kerway/_kerwayWorks";

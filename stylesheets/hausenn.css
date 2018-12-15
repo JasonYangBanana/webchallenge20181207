@@ -1,21 +1,265 @@
 @charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
-/* line 4, ../sass/_hausennMain.scss */
+/* line 5, ../sass/partial/_reset.scss */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 94, ../sass/partial/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 108, ../sass/partial/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 112, ../sass/partial/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 117, ../sass/partial/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 122, ../sass/partial/_reset.scss */
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none;
+}
+
+/* line 130, ../sass/partial/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/partial/_menu.scss */
+.menu {
+  z-index: 1;
+  height: 100vh;
+  max-width: 590px;
+  background-color: #000;
+  position: fixed;
+  opacity: 0.8;
+  padding: 50px 0 120px 145px;
+  box-sizing: border-box;
+  left: -590px;
+  transition: 2s;
+}
+
+/* line 14, ../sass/partial/_menu.scss */
+.menuContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 23, ../sass/partial/_menu.scss */
+.logo img {
+  width: 164px;
+  height: 18px;
+}
+
+/* line 29, ../sass/partial/_menu.scss */
+.subPageLogo {
+  display: flex;
+  margin-top: 20px;
+}
+/* line 34, ../sass/partial/_menu.scss */
+.subPageLogo img:first-child {
+  width: 107px;
+  height: 18px;
+  padding-right: 15px;
+}
+/* line 40, ../sass/partial/_menu.scss */
+.subPageLogo img:nth-child(2) {
+  width: 92px;
+  height: 18px;
+  padding: 0 15px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+/* line 50, ../sass/partial/_menu.scss */
+.subPageLogo img:last-child {
+  width: 100px;
+  height: 18px;
+  padding-left: 15px;
+}
+
+/* line 58, ../sass/partial/_menu.scss */
+.menuMain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -67.5px;
+}
+/* line 65, ../sass/partial/_menu.scss */
+.menuMain img:first-child {
+  width: 230px;
+  height: 40px;
+}
+/* line 70, ../sass/partial/_menu.scss */
+.menuMain img:last-child {
+  margin-top: 55px;
+  width: 199px;
+  height: 40px;
+}
+
+/* line 78, ../sass/partial/_menu.scss */
+.menuLink {
+  color: #fff;
+  font-size: 16px;
+}
+/* line 82, ../sass/partial/_menu.scss */
+.menuLink i {
+  margin-right: 20px;
+}
+
+/* line 1, ../sass/partial/_contactUs.scss */
+.contactUs {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  right: -100vw;
+  transition: 2s;
+  background-color: #fff;
+}
+/* line 10, ../sass/partial/_contactUs.scss */
+.contactUs img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 4, ../sass/hausenn/_hausennMain.scss */
 body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* line 8, ../sass/_hausennMain.scss */
+/* line 8, ../sass/hausenn/_hausennMain.scss */
 a {
   color: #000;
   text-decoration: none;
 }
-/* line 12, ../sass/_hausennMain.scss */
+/* line 12, ../sass/hausenn/_hausennMain.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 17, ../sass/_hausennMain.scss */
+/* line 17, ../sass/hausenn/_hausennMain.scss */
 .subTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
@@ -23,7 +267,7 @@ a:hover {
   letter-spacing: 10px;
 }
 
-/* line 24, ../sass/_hausennMain.scss */
+/* line 24, ../sass/hausenn/_hausennMain.scss */
 .rectTitleCn {
   font-weight: 300;
   font-size: 16px;
@@ -34,42 +278,42 @@ a:hover {
   height: 117px;
 }
 
-/* line 34, ../sass/_hausennMain.scss */
+/* line 34, ../sass/hausenn/_hausennMain.scss */
 .enContent {
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 2px;
 }
 
-/* line 40, ../sass/_hausennMain.scss */
+/* line 40, ../sass/hausenn/_hausennMain.scss */
 .cnContent {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 3px;
 }
 
-/* line 46, ../sass/_hausennMain.scss */
+/* line 46, ../sass/hausenn/_hausennMain.scss */
 .animated {
   animation-duration: 10s;
   animation-iteration-count: 3;
 }
 
-/* line 65, ../sass/_hausennMain.scss */
+/* line 51, ../sass/hausenn/_hausennMain.scss */
 .hausennTitle {
   width: 200px;
   margin: 20px auto 0;
 }
-/* line 69, ../sass/_hausennMain.scss */
+/* line 55, ../sass/hausenn/_hausennMain.scss */
 .hausennTitle img {
   width: 200px;
 }
 
-/* line 74, ../sass/_hausennMain.scss */
+/* line 60, ../sass/hausenn/_hausennMain.scss */
 .hausennLogo img {
   width: 27px;
 }
 
-/* line 78, ../sass/_hausennMain.scss */
+/* line 64, ../sass/hausenn/_hausennMain.scss */
 .hausennContent {
   position: fixed;
   right: 0;
@@ -77,17 +321,17 @@ a:hover {
   z-index: 100;
 }
 
-/* line 85, ../sass/_hausennMain.scss */
+/* line 71, ../sass/hausenn/_hausennMain.scss */
 .section2 {
   height: 8615px;
 }
 
-/* line 89, ../sass/_hausennMain.scss */
+/* line 75, ../sass/hausenn/_hausennMain.scss */
 .container {
   width: 100%;
 }
 
-/* line 93, ../sass/_hausennMain.scss */
+/* line 79, ../sass/hausenn/_hausennMain.scss */
 .parallax {
   height: 100vh;
   overflow-y: scroll;
@@ -95,7 +339,7 @@ a:hover {
   perspective: 1px;
 }
 
-/* line 104, ../sass/_hausennMain.scss */
+/* line 90, ../sass/hausenn/_hausennMain.scss */
 .parallax__group {
   position: relative;
   height: 768px;
@@ -103,93 +347,93 @@ a:hover {
   transform-style: preserve-3d;
 }
 
-/* line 112, ../sass/_hausennMain.scss */
+/* line 98, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--fore {
   position: absolute;
   transform: translateZ(0px) scale(1);
   z-index: 1;
 }
 
-/* line 118, ../sass/_hausennMain.scss */
+/* line 104, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--base {
   position: absolute;
   transform: translateZ(-1px) scale(1);
 }
 
-/* line 123, ../sass/_hausennMain.scss */
+/* line 109, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back {
   position: absolute;
   transform: translateZ(-2px) scale(3.2);
   z-index: -1;
 }
 
-/* line 129, ../sass/_hausennMain.scss */
+/* line 115, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back2 {
   position: absolute;
   transform: translateZ(-3px) scale(2);
   z-index: -2;
 }
 
-/* line 136, ../sass/_hausennMain.scss */
+/* line 122, ../sass/hausenn/_hausennMain.scss */
 .idea .enContent {
   transform: translateX(450px) translateY(15px);
 }
-/* line 140, ../sass/_hausennMain.scss */
+/* line 126, ../sass/hausenn/_hausennMain.scss */
 .idea .banner1 {
   transform: translateX(-550px) translateY(-450px);
 }
-/* line 144, ../sass/_hausennMain.scss */
+/* line 130, ../sass/hausenn/_hausennMain.scss */
 .idea .banner2 {
   transform: translateX(-350px) translateY(-100px);
 }
-/* line 148, ../sass/_hausennMain.scss */
+/* line 134, ../sass/hausenn/_hausennMain.scss */
 .idea .nudeBlock {
   background-color: #dacbc7;
   width: 1023px;
   height: 388px;
   transform: translateX(-110px) translateY(0px) scale(0.85);
 }
-/* line 155, ../sass/_hausennMain.scss */
+/* line 141, ../sass/hausenn/_hausennMain.scss */
 .idea .cnContent {
   transform: translateX(900px) translateY(50px);
 }
 
-/* line 161, ../sass/_hausennMain.scss */
+/* line 147, ../sass/hausenn/_hausennMain.scss */
 .source .blackBlock {
   background-color: #000;
   width: 55px;
   height: 7px;
   transform: translateX(100px) translateY(250px);
 }
-/* line 168, ../sass/_hausennMain.scss */
+/* line 154, ../sass/hausenn/_hausennMain.scss */
 .source .enContent {
   transform: translateX(150px) translateY(700px) scale(2);
 }
-/* line 172, ../sass/_hausennMain.scss */
+/* line 158, ../sass/hausenn/_hausennMain.scss */
 .source .cnContent {
   transform: translateX(900px) translateY(1200px);
 }
 
-/* line 179, ../sass/_hausennMain.scss */
+/* line 165, ../sass/hausenn/_hausennMain.scss */
 .couture .subTitle {
   transform: translateX(900px) translateY(800px);
 }
-/* line 183, ../sass/_hausennMain.scss */
+/* line 169, ../sass/hausenn/_hausennMain.scss */
 .couture .banner {
   transform: translateX(-250px) translateY(600px);
 }
-/* line 187, ../sass/_hausennMain.scss */
+/* line 173, ../sass/hausenn/_hausennMain.scss */
 .couture .rectTitleCn {
   transform: translateX(1080px) translateY(850px);
 }
-/* line 191, ../sass/_hausennMain.scss */
+/* line 177, ../sass/hausenn/_hausennMain.scss */
 .couture .nudeBlock {
   width: 460px;
   height: 425px;
   background-color: #dacbc7;
   transform: translateX(450px) translateY(300px);
 }
-/* line 198, ../sass/_hausennMain.scss */
+/* line 184, ../sass/hausenn/_hausennMain.scss */
 .couture .blackBlock {
   width: 135px;
   height: 28px;
@@ -197,26 +441,26 @@ a:hover {
   transform: translateX(1080px) translateY(900px) scale(0.6);
 }
 
-/* line 208, ../sass/_hausennMain.scss */
+/* line 194, ../sass/hausenn/_hausennMain.scss */
 .collections .subTitle {
   transform: translateX(100px) translateY(2000px);
 }
-/* line 212, ../sass/_hausennMain.scss */
+/* line 198, ../sass/hausenn/_hausennMain.scss */
 .collections .rectTitleCn {
   transform: translateX(40px) translateY(1700px);
 }
-/* line 216, ../sass/_hausennMain.scss */
+/* line 202, ../sass/hausenn/_hausennMain.scss */
 .collections .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(100px) translateY(2300px);
 }
-/* line 223, ../sass/_hausennMain.scss */
+/* line 209, ../sass/hausenn/_hausennMain.scss */
 .collections .banner {
   transform: translateX(-280px) translateY(1800px);
 }
-/* line 227, ../sass/_hausennMain.scss */
+/* line 213, ../sass/hausenn/_hausennMain.scss */
 .collections .nudeBlock {
   width: 489px;
   height: 600px;
@@ -224,45 +468,45 @@ a:hover {
   transform: translateX(-180px) translateY(600px);
 }
 
-/* line 237, ../sass/_hausennMain.scss */
+/* line 223, ../sass/hausenn/_hausennMain.scss */
 .seasons .subTitle {
   transform: translateX(600px) translateY(3700px);
 }
-/* line 241, ../sass/_hausennMain.scss */
+/* line 227, ../sass/hausenn/_hausennMain.scss */
 .seasons .rectTitleCn {
   transform: translateX(720px) translateY(3200px);
 }
-/* line 245, ../sass/_hausennMain.scss */
+/* line 231, ../sass/hausenn/_hausennMain.scss */
 .seasons .nudeBlock {
   width: 180px;
   height: 216px;
   background-color: #dacbc7;
   transform: translateX(720px) translateY(3450px) scale(2);
 }
-/* line 252, ../sass/_hausennMain.scss */
+/* line 238, ../sass/hausenn/_hausennMain.scss */
 .seasons .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(1750px) translateY(4500px);
 }
-/* line 259, ../sass/_hausennMain.scss */
+/* line 245, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner1 {
   transform: translateX(400px) translateY(1000px) scale(0.5);
 }
-/* line 263, ../sass/_hausennMain.scss */
+/* line 249, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner2 {
   transform: translateX(400px) translateY(2200px);
 }
 
-/* line 268, ../sass/_hausennMain.scss */
+/* line 1, ../sass/_footer.scss */
 footer {
   background-color: #dacbc7;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
 }
-/* line 274, ../sass/_hausennMain.scss */
+/* line 7, ../sass/_footer.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -272,11 +516,11 @@ footer .contactInfo {
   width: 80%;
   margin: 0 auto;
 }
-/* line 283, ../sass/_hausennMain.scss */
+/* line 16, ../sass/_footer.scss */
 footer .contactInfo .address {
   padding: 120px 0 0;
 }
-/* line 288, ../sass/_hausennMain.scss */
+/* line 21, ../sass/_footer.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -284,21 +528,21 @@ footer a {
   font-size: 13px;
   letter-spacing: 3px;
 }
-/* line 296, ../sass/_hausennMain.scss */
+/* line 29, ../sass/_footer.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 300, ../sass/_hausennMain.scss */
+/* line 33, ../sass/_footer.scss */
 footer .contactName {
   width: 80%;
   margin: 75px auto 0;
   text-align: right;
 }
-/* line 305, ../sass/_hausennMain.scss */
+/* line 38, ../sass/_footer.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 309, ../sass/_hausennMain.scss */
+/* line 42, ../sass/_footer.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
