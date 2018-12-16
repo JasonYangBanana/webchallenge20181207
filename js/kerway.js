@@ -127,4 +127,18 @@ $(document).ready(function() {
       scrollTop: $("#kerwayWorks").offset().top
     }, 1000);
   });
+  $(window).scroll(function () {
+    $(window).scroll(function () {
+      var topOfElement = $("#kerwayWorks").offset().top;
+      var bottomOfElement = $("#kerwayWorks").offset().top + $("#kerwayWorks").outerHeight();
+      var bottomOfScreen = $(window).scrollTop() + window.innerHeight;
+      var topOfScreen = $(window).scrollTop();
+      if ((bottomOfScreen > topOfElement) && (bottomOfScreen < bottomOfElement)) {
+        $('.kerwayWorksFliter').addClass('show');
+      } else {
+        $('.kerwayWorksFliter').removeClass('show');
+      }
+    });
+  })
 });
+

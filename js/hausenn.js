@@ -70,10 +70,11 @@ $(".mouseButton").click(function() {
     1000);
 });
 
+
+
 $(document).ready(function() {
   //想辦法抓目標照片
   $('.parallax__layer--back').click(function () {
-    console.log('kai')
     $('.gallery').addClass('show');
     $('.burgerMenu').addClass('open');
     menuStatus = !menuStatus;
