@@ -364,6 +364,7 @@ table {
 
 /* line 1, ../sass/partial/_contactUs.scss */
 .contactUs {
+  top: 0;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -372,13 +373,13 @@ table {
   transition: 2s;
   background-color: #fff;
 }
-/* line 10, ../sass/partial/_contactUs.scss */
+/* line 11, ../sass/partial/_contactUs.scss */
 .contactUs img {
   width: 100%;
   height: auto;
 }
 
-/* line 16, ../sass/partial/_contactUs.scss */
+/* line 17, ../sass/partial/_contactUs.scss */
 .contantUsImage {
   z-index: 2;
   position: fixed;
@@ -388,7 +389,7 @@ table {
   height: 164px;
 }
 @media (max-width: 768px) {
-  /* line 16, ../sass/partial/_contactUs.scss */
+  /* line 17, ../sass/partial/_contactUs.scss */
   .contantUsImage {
     display: none;
   }

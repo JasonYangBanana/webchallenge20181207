@@ -1,14 +1,16 @@
 let loadingPage = document.querySelector(".loadingPage")
 let homePage = document.querySelector(".homePage")
-setTimeout(function() {
-  loadingPage.style.display = "none";
-}, 3000)
 let menu = document.querySelector(".menu")
 let contactUsImage = document.querySelector(".contantUsImage")
 let contactUs = document.querySelector(".contactUs")
 let menuStatus = false
 let contactUsStatus = false
 let buggerMenu = document.querySelector(".burgerMenu")
+
+setTimeout(function() {
+  loadingPage.style.display = "none";
+}, 3000)
+
 contactUsImage.addEventListener("click", function() {
   burgerMenuChange()
   contactUs.style.right = "0";
