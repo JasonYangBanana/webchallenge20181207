@@ -60,7 +60,12 @@ kerwayBanner.addEventListener("mousemove", function(e) {
   let shadowLevel = (Math.abs(xMove) + Math.abs(yMove)) / 2 / moveRect * 3
   kerwayBackground.style.transform = `matrix(1.03, 0, 0, 1.03, ${xMove}, ${yMove})`
 })
-
+$(".mouseButton").click(function() {
+  kerwayBackground.style.transform = " matrix(1, 0, 0, 1, 0, 0)"
+  $('html, body').animate({
+    scrollTop: $(window).height()
+  }, 1000);
+});
 $(document).ready(function() {
   var $grid = $('.grid').isotope({
     // options

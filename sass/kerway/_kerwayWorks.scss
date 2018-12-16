@@ -1,122 +1,148 @@
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
-#kerwayWorks{
-    margin-top: 80px;
-    .kerwayTitle{
-        color: white;
-        margin-bottom: 80px;
-        text-align: center;
-        font-weight: 600;
-        font-size: 40pt;
-        font-family: cursive;
+
+#kerwayWorks {
+  margin-top: 80px;
+
+  .kerwayTitle {
+    color: white;
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40pt;
+    font-family: cursive;
+  }
+
+  .kerwaySubtitle {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40pt;
+    letter-spacing: 4pt;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: #fff;
+      height: 16px;
+      width: 150px;
+      margin-bottom: 30px;
     }
-    .kerwaySubtitle{
-        color: white;
-        font-family: sans-serif;
-        font-weight: 600;
-        font-size: 40pt;
-        letter-spacing: 4pt;
-        position: relative;
-        margin-bottom: 30px;
-        margin-left: 50px;
-        &::before{
-                content: '';
-                display: block;
-                background-color: #fff;
-                height: 16px;
-                width: 150px;
-                margin-bottom: 30px;
-        }
-        .kerwayChineseSubtitle{
-            font-size: 32pt;
-        }
+
+    .kerwayChineseSubtitle {
+      font-size: 32pt;
     }
-    .grid{
-        margin: 0 auto;
-        max-width: 1200px;
-        &::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        .grid-item{
-            padding: 25px;
-            float: left;
-            width: 40%;
-            img{
-                max-width: 100%;
-            }
-        }
+  }
+
+  .grid {
+    margin: 0 auto;
+    max-width: 1200px;
+
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
     }
-    .kerwayWorksFliter{
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        height: 40px;
-        // overflow: hidden;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        .nineDots{
-            color: white;
-            font-size: 40px;
-        }
-        .filters{
-            display: flex;
-            justify-content: space-around;
-            .item{
-                margin: 0 20px;
-                .filterKinds{
-                    color: white;
-                    font-size: 20px;
-                }
-                .listContainer{
-                    margin-top: 16px;
-                    padding-top: 10px;
-                    background-color: #fff;
-                    li[data-filter] {
-                        color: rgba(0, 0, 0, 0.721);
-                        padding: 8px 10px;
-                    }
-                    .filterSubtitle{
-                        color: black;
-                        font-weight: 600;
-                        font-size: 18px;
-                        padding: 8px 10px;
-                    }
-                }
-            }
-            .workProjects {
-                transition: 1s ease-in-out;
-                &:hover {
-                    transform: translateY(-426px);
-                }
-            }
-            .photographers {
-                transition: 1s ease-in-out;
-                &:hover {
-                    transform: translateY(-390px);
-                }
-            }
-            .styleists {
-                transition: 1s ease-in-out;
-                &:hover {
-                    transform: translateY(-134px);
-                }
-            }
-            .directors {
-                transition: 1s ease-in-out;
-                &:hover {
-                    transform: translateY(-70px);
-                }
-            }
-        }
-        .arrowUp{
-            color: white;
-            font-size: 40px;
-        }
+
+    .grid-item {
+      padding: 25px;
+      float: left;
+      width: 40%;
+
+      img {
+        max-width: 100%;
+      }
     }
+  }
+
+  .kerwayWorksFliter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    // overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .nineDots {
+      color: white;
+      font-size: 40px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: space-around;
+
+      .item {
+        margin: 0 20px;
+
+        .filterKinds {
+          color: white;
+          font-size: 20px;
+        }
+
+        .listContainer {
+          margin-top: 16px;
+          padding-top: 10px;
+          background-color: #fff;
+
+          li[data-filter] {
+            color: rgba(0, 0, 0, 0.721);
+            padding: 8px 10px;
+          }
+
+          .filterSubtitle {
+            color: black;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 8px 10px;
+          }
+        }
+      }
+
+      .workProjects {
+        transition: 1s ease-in-out;
+
+        &:hover {
+          transform: translateY(-426px);
+        }
+      }
+
+      .photographers {
+        transition: 1s ease-in-out;
+
+        &:hover {
+          transform: translateY(-390px);
+        }
+      }
+
+      .styleists {
+        transition: 1s ease-in-out;
+
+        &:hover {
+          transform: translateY(-134px);
+        }
+      }
+
+      .directors {
+        transition: 1s ease-in-out;
+
+        &:hover {
+          transform: translateY(-70px);
+        }
+      }
+    }
+
+    .arrowUp {
+      color: white;
+      font-size: 40px;
+    }
+  }
 }

@@ -62,6 +62,13 @@ hausennBanner.addEventListener("mousemove", function(e) {
   let shadowLevel = (Math.abs(xMove) + Math.abs(yMove)) / 2 / moveRect * 3
   hausennBackground.style.transform = `matrix(1.03, 0, 0, 1.03, ${xMove}, ${yMove})`
 })
+$(".mouseButton").click(function() {
+  hausennBackground.style.transform = " matrix(1, 0, 0, 1, 0, 0)"
+  $('html, body').animate({
+      scrollTop: $(window).height()
+    },
+    1000);
+});
 
 $(document).ready(function() {
   //想辦法抓目標照片
