@@ -8,50 +8,49 @@
   display: grid;
   grid-template-columns: 30% 800px;
   grid-gap: 5%;
-  margin-top: 30px;
   position: fixed;
   right: -100vw;
   top: 0;
+  background-color: #f3eff1;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 /*accordion*/
-body {
-  .accordionLists {
-    width: 350px;
-    height: 768px;
-    z-index: 1;
-    bottom: 0;
-    transition: 2s;
-    letter-spacing: 8px;
-    font-family: 'Open Sans', sans-serif;
+.accordionLists {
+  z-index: 1;
+  bottom: 0;
+  transition: 2s;
+  letter-spacing: 8px;
+  font-family: 'Open Sans', sans-serif;
 
-    &.show {
-      right: 0;
-    }
+  &.show {
+    right: 0;
+  }
 
-    div[data-accordion-group] {
-      color: #333;
-      margin-left: 50px;
-      transform: translateY(150px);
+  div[data-accordion-group] {
+    color: #333;
+    margin-left: 50px;
+    transform: translateY(150px);
 
-      .accordion {
-        div[data-control] {
-          font-size: 36px;
-          font-weight: 600;
+    .accordion {
+      div[data-control] {
+        font-size: 36px;
+        font-weight: 600;
+        padding: 2px 8px;
+      }
+
+      ul {
+        padding-left: 24px;
+
+        .subtitle {
+          font-size: 24px;
           padding: 2px 8px;
-        }
 
-        ul {
-          padding-left: 24px;
-
-          .subtitle {
+          .item {
             font-size: 24px;
-            padding: 2px 8px;
-
-            .item {
-              font-size: 24px;
-              font-weight: 300;
-              padding: 4px 8px;
-            }
+            font-weight: 300;
+            padding: 4px 8px;
           }
         }
       }

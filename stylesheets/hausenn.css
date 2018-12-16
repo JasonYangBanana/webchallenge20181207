@@ -769,17 +769,18 @@ a:hover {
   display: grid;
   grid-template-columns: 30% 800px;
   grid-gap: 5%;
-  margin-top: 30px;
   position: fixed;
   right: -100vw;
   top: 0;
+  background-color: #f3eff1;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*accordion*/
-/* line 18, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists {
-  width: 350px;
-  height: 768px;
+/* line 20, ../sass/hausenn/_hausennGallery.scss */
+.accordionLists {
   z-index: 1;
   bottom: 0;
   transition: 2s;
@@ -787,62 +788,62 @@ body .accordionLists {
   font-family: 'Open Sans', sans-serif;
 }
 /* line 27, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists.show {
+.accordionLists.show {
   right: 0;
 }
 /* line 31, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists div[data-accordion-group] {
+.accordionLists div[data-accordion-group] {
   color: #333;
   margin-left: 50px;
   transform: translateY(150px);
 }
 /* line 37, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists div[data-accordion-group] .accordion div[data-control] {
+.accordionLists div[data-accordion-group] .accordion div[data-control] {
   font-size: 36px;
   font-weight: 600;
   padding: 2px 8px;
 }
 /* line 43, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists div[data-accordion-group] .accordion ul {
+.accordionLists div[data-accordion-group] .accordion ul {
   padding-left: 24px;
 }
 /* line 46, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
+.accordionLists div[data-accordion-group] .accordion ul .subtitle {
   font-size: 24px;
   padding: 2px 8px;
 }
 /* line 50, ../sass/hausenn/_hausennGallery.scss */
-body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
+.accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   font-size: 24px;
   font-weight: 300;
   padding: 4px 8px;
 }
 
 /*album*/
-/* line 62, ../sass/hausenn/_hausennGallery.scss */
+/* line 61, ../sass/hausenn/_hausennGallery.scss */
 .row > .column {
   padding: 0 8px;
 }
 
-/* line 66, ../sass/hausenn/_hausennGallery.scss */
+/* line 65, ../sass/hausenn/_hausennGallery.scss */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 72, ../sass/hausenn/_hausennGallery.scss */
+/* line 71, ../sass/hausenn/_hausennGallery.scss */
 .column {
   float: left;
   width: 70px;
 }
 
-/* line 77, ../sass/hausenn/_hausennGallery.scss */
+/* line 76, ../sass/hausenn/_hausennGallery.scss */
 .column::after {
   padding: 0;
 }
 
-/* line 81, ../sass/hausenn/_hausennGallery.scss */
+/* line 80, ../sass/hausenn/_hausennGallery.scss */
 .columnAll {
   padding-top: 30px;
   display: grid;
@@ -852,7 +853,7 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
 }
 
 /* The Modal (background) */
-/* line 89, ../sass/hausenn/_hausennGallery.scss */
+/* line 88, ../sass/hausenn/_hausennGallery.scss */
 .modal {
   display: block;
   width: 100%;
@@ -861,14 +862,14 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
 }
 
 /* Modal Content */
-/* line 96, ../sass/hausenn/_hausennGallery.scss */
+/* line 95, ../sass/hausenn/_hausennGallery.scss */
 .modal-content {
   padding: 0;
   max-width: 750px;
   display: grid;
 }
 
-/* line 102, ../sass/hausenn/_hausennGallery.scss */
+/* line 101, ../sass/hausenn/_hausennGallery.scss */
 .mySlides {
   display: none;
   margin: 0 auto;
@@ -876,7 +877,7 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
 }
 
 /* Next & previous buttons */
-/* line 108, ../sass/hausenn/_hausennGallery.scss */
+/* line 107, ../sass/hausenn/_hausennGallery.scss */
 .next,
 .prev {
   cursor: pointer;
@@ -888,7 +889,7 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   align-self: center;
 }
 
-/* line 119, ../sass/hausenn/_hausennGallery.scss */
+/* line 118, ../sass/hausenn/_hausennGallery.scss */
 .numbertext {
   color: #fff;
   font-size: 12px;
@@ -897,28 +898,28 @@ body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   top: 0;
 }
 
-/* line 127, ../sass/hausenn/_hausennGallery.scss */
+/* line 126, ../sass/hausenn/_hausennGallery.scss */
 img {
   margin-bottom: -4px;
 }
 
-/* line 131, ../sass/hausenn/_hausennGallery.scss */
+/* line 130, ../sass/hausenn/_hausennGallery.scss */
 .demo {
   filter: brightness(50%);
 }
 
-/* line 135, ../sass/hausenn/_hausennGallery.scss */
+/* line 134, ../sass/hausenn/_hausennGallery.scss */
 .active,
 .demo:hover {
   filter: brightness(100%);
 }
 
-/* line 140, ../sass/hausenn/_hausennGallery.scss */
+/* line 139, ../sass/hausenn/_hausennGallery.scss */
 img.hover-shadow {
   transition: 0.3s;
 }
 
-/* line 144, ../sass/hausenn/_hausennGallery.scss */
+/* line 143, ../sass/hausenn/_hausennGallery.scss */
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
