@@ -1,15 +1,111 @@
-.parallax {
-  margin: 0 auto;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
   box-sizing: border-box;
-  padding: 50px 100px 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+.parallax__layer--fore {
+  position: absolute;
+  transform: translateZ(0px) scale(1);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  position: absolute;
+  transform: translateZ(-1px) scale(1);
+}
+
+.parallax__layer--back {
+  position: absolute;
+  transform: translateZ(-2px) scale(3.2);
+  z-index: -1;
+}
+//title
+
+.title {
+  .jobsWords {
+    transform: translateX(885px) translateY(1150px) scale(1.65);
+  }
+
+  .banner {
+    transform: translateX(-160px) translateY(-100px) scale(0.4);
+  }
+
+  .bannerSlogan {
+    font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
+    transform: translateX(790px) translateY(1000px) scale(3);
+    letter-spacing: 11px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .group2Dash {
+    background-color: #000;
+    width: 36px;
+    height: 10px;
+    transform: translateX(-180px) translateY(2200px) scale(2);
+  }
+}
+
+.section2 {
+  height: 2500px;
+}
+//content
+
+.content {
+  .banner1 {
+    transform: translateX(563px) translateY(1570px) scale(0.5);
+  }
+
+  .banner2 {
+    transform: translateX(1000px) translateY(1800px) scale(0.9);
+  }
+
+  .banner3 {
+    transform: translateX(490px) translateY(855px) scale(0.4);
+  }
+
+  .contextTitle {
+    font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
+    transform: translateX(98px) translateY(780px) scale(1);
+    letter-spacing: 11px;
+    line-height: 80px;
+    text-align: left;
+  }
+
+  .contentStyle {
+    font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
+    transform: translateX(-70px) translateY(-100px) scale(1);
+    text-align: justify;
+  }
+
+  .contextSlogn {
+    font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
+    transform: translateX(0px) translateY(0px) scale(2);
   }
 }
 
@@ -44,13 +140,6 @@
 
 .kerwayHero {
   width: 100%;
-}
-
-.bannerSlogan {
-  @include textStyle(44px,65px,2px);
-  right: 110px;
-  position: absolute;
-  top: -370px;
 }
 
 .group2Dash {
