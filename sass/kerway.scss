@@ -1,13 +1,10 @@
 @import "./partial/reset";
-@import "./partial/menu";
 @import "./partial/mixin";
+@import "./partial/loadingPage";
+@import "./partial/menu";
 @import "./partial/burgerMenu";
 @import "./partial/contactUs";
 @import "./kerway/kerwayBanner";
 @import "./kerway/kerwayMain";
 @import "./kerway/kerwayWorks";
-@import "./partial/footer";
-
-footer {
-  background-color: #fff;
-}
+@import "./kerway/footer";
