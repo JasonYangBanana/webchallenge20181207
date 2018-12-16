@@ -1,3 +1,8 @@
+let loadingPage = document.querySelector(".loadingPage")
+let homePage = document.querySelector(".homePage")
+setTimeout(function() {
+  loadingPage.style.display = "none";
+}, 3000)
 let menu = document.querySelector(".menu")
 let contactUsImage = document.querySelector(".contantUsImage")
 let contactUs = document.querySelector(".contactUs")

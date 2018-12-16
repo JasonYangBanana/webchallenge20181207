@@ -1,3 +1,8 @@
+let loadingPage = document.querySelector(".loadingPage")
+let homePage = document.querySelector(".homePage")
+setTimeout(function() {
+  loadingPage.style.display = "none";
+}, 3000)
 let menu = document.querySelector(".menu")
 let contactUsImage = document.querySelector(".contantUsImage")
 let contactUs = document.querySelector(".contactUs")
@@ -56,17 +61,17 @@ function animationMenu() {
 //   kerwayBackground.style.transform = `matrix(1.03, 0, 0, 1.03, ${xMove}, ${yMove})`
 // })
 
-$(document).ready(function () {
+$(document).ready(function() {
   //想辦法抓目標照片
-  $('.parallax__layer--back').click(function () {
+  $('.parallax__layer--back').click(function() {
     $('.accordionLists').addClass('show');
     $('.burgerMenu').addClass('open');
     menuStatus = !menuStatus;
   });
-  $('.burgerMenu').click(function () {
+  $('.burgerMenu').click(function() {
     $('.accordionLists').removeClass('show');
   });
-  
+
   $('.accordion').accordion({
     "transitionSpeed": 500,
     "transitionEasing": 'ease-in-out',

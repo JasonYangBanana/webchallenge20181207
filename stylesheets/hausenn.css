@@ -146,11 +146,39 @@ table {
   0% {
     top: 0;
   }
-  50% {
+  100% {
     top: 2px;
   }
+}
+/* line 1, ../sass/partial/_loadingPage.scss */
+.loadingPage {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 2s;
+}
+/* line 13, ../sass/partial/_loadingPage.scss */
+.loadingPage img {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  animation-name: flicker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
   100% {
-    top: 0;
+    opacity: 0;
   }
 }
 /* line 1, ../sass/partial/_menu.scss */
@@ -461,10 +489,11 @@ body::-webkit-scrollbar {
   position: relative;
   top: 0;
   animation-name: bounce;
-  animation-duration: 0.6s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-/* line 34, ../sass/partial/_mixin.scss */
+/* line 35, ../sass/partial/_mixin.scss */
 .mouseButton img {
   width: 100%;
 }
@@ -775,7 +804,7 @@ footer {
   height: 245px;
   background-color: #dacbc7;
 }
-/* line 52, ../sass/partial/_mixin.scss */
+/* line 49, ../sass/partial/_mixin.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -785,11 +814,11 @@ footer .contactInfo {
   width: 80%;
   margin: 0 auto;
 }
-/* line 61, ../sass/partial/_mixin.scss */
+/* line 58, ../sass/partial/_mixin.scss */
 footer .contactInfo .address {
   padding: 120px 0 0;
 }
-/* line 66, ../sass/partial/_mixin.scss */
+/* line 63, ../sass/partial/_mixin.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -799,21 +828,21 @@ footer a {
   text-decoration: none;
   color: #000;
 }
-/* line 76, ../sass/partial/_mixin.scss */
+/* line 73, ../sass/partial/_mixin.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 80, ../sass/partial/_mixin.scss */
+/* line 77, ../sass/partial/_mixin.scss */
 footer .contactName {
   width: 80%;
   margin: 75px auto 0;
   text-align: right;
 }
-/* line 85, ../sass/partial/_mixin.scss */
+/* line 82, ../sass/partial/_mixin.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 89, ../sass/partial/_mixin.scss */
+/* line 86, ../sass/partial/_mixin.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
