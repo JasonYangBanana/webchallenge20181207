@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
 /* line 5, ../sass/partial/_reset.scss */
 a,
 abbr,
@@ -720,135 +721,129 @@ a:hover {
   transform: translateX(400px) translateY(2200px);
 }
 
-/* line 2, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  right: -100vw;
-  bottom: 0;
-  transition: 2s;
-  background-color: black;
-  opacity: 0.8;
-}
-/* line 12, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists.show {
-  right: 0;
-}
-/* line 15, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists div[data-accordion-group] {
-  color: white;
-  margin-left: 50px;
-  transform: translateY(150px);
-}
-/* line 20, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists div[data-accordion-group] .accordion div[data-control] {
-  font-size: 40px;
-  font-weight: 600;
-  padding: 2px 8px;
-}
-/* line 25, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists div[data-accordion-group] .accordion ul {
-  padding-left: 24px;
-}
-/* line 27, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
-  font-size: 28px;
-  padding: 2px 8px;
-}
-/* line 30, ../sass/hausenn/_hausennAccordin.scss */
-body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
-  font-size: 28px;
-  font-weight: 300;
-  padding: 4px 8px;
-}
-
-/* line 2, ../sass/hausenn/_hausennGallery.scss */
+/* line 3, ../sass/hausenn/_hausennGallery.scss */
 body {
   margin: 0;
   background-color: #f3eff1;
 }
 
-/* line 7, ../sass/hausenn/_hausennGallery.scss */
+/* line 8, ../sass/hausenn/_hausennGallery.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 12, ../sass/hausenn/_hausennGallery.scss */
+.gallery {
+  display: grid;
+  grid-template-columns: 30% 800px;
+  grid-gap: 5%;
+  margin-top: 30px;
+}
+
 /*accordion*/
+/* line 27, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists {
+  width: 350px;
+  height: 768px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  transition: 2s;
+  letter-spacing: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 36, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists.show {
+  right: 0;
+}
+/* line 39, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists div[data-accordion-group] {
+  color: #333;
+  margin-left: 50px;
+  transform: translateY(150px);
+}
+/* line 44, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists div[data-accordion-group] .accordion div[data-control] {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+/* line 49, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists div[data-accordion-group] .accordion ul {
+  padding-left: 24px;
+}
+/* line 51, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists div[data-accordion-group] .accordion ul .subtitle {
+  font-size: 24px;
+  padding: 2px 8px;
+}
+/* line 54, ../sass/hausenn/_hausennGallery.scss */
+body .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
+  font-size: 24px;
+  font-weight: 300;
+  padding: 4px 8px;
+}
+
 /*album*/
-/* line 17, ../sass/hausenn/_hausennGallery.scss */
+/* line 68, ../sass/hausenn/_hausennGallery.scss */
 .row > .column {
   padding: 0 8px;
 }
 
-/* line 21, ../sass/hausenn/_hausennGallery.scss */
+/* line 72, ../sass/hausenn/_hausennGallery.scss */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 27, ../sass/hausenn/_hausennGallery.scss */
+/* line 78, ../sass/hausenn/_hausennGallery.scss */
 .column {
   float: left;
-  width: 80px;
-  padding: 0 10px 0 0;
+  width: 70px;
 }
 
-/* line 32, ../sass/hausenn/_hausennGallery.scss */
+/* line 82, ../sass/hausenn/_hausennGallery.scss */
 .column::after {
   padding: 0;
 }
 
-/* line 35, ../sass/hausenn/_hausennGallery.scss */
+/* line 85, ../sass/hausenn/_hausennGallery.scss */
 .columnAll {
-  padding-top: 50px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-gap: 10px;
+  justify-self: center;
 }
 
 /* The Modal (background) */
-/* line 43, ../sass/hausenn/_hausennGallery.scss */
+/* line 94, ../sass/hausenn/_hausennGallery.scss */
 .modal {
   display: block;
-  z-index: 1;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
 }
 
 /* Modal Content */
-/* line 54, ../sass/hausenn/_hausennGallery.scss */
+/* line 102, ../sass/hausenn/_hausennGallery.scss */
 .modal-content {
   padding: 0;
-  max-width: 600px;
+  max-width: 750px;
   display: grid;
 }
 
 /* The Close Button */
-/* line 78, ../sass/hausenn/_hausennGallery.scss */
+/* line 127, ../sass/hausenn/_hausennGallery.scss */
 .mySlides {
   display: none;
-  width: 80%;
   margin: 0px auto;
+  width: 70%;
 }
 
 /* Next & previous buttons */
-/* line 89, ../sass/hausenn/_hausennGallery.scss */
-.prev {
-  left: -10%;
-}
-
-/* line 92, ../sass/hausenn/_hausennGallery.scss */
-.next {
-  right: -10%;
-}
-
-/* line 95, ../sass/hausenn/_hausennGallery.scss */
+/* line 138, ../sass/hausenn/_hausennGallery.scss */
 .prev,
 .next {
   cursor: pointer;
@@ -857,10 +852,10 @@ body {
   font-size: 20px;
   transition: 0.6s ease;
   user-select: none;
+  align-self: center;
 }
 
-/* Number text (1/3 etc) */
-/* line 109, ../sass/hausenn/_hausennGallery.scss */
+/* line 151, ../sass/hausenn/_hausennGallery.scss */
 .numbertext {
   color: #fff;
   font-size: 12px;
@@ -869,28 +864,28 @@ body {
   top: 0;
 }
 
-/* line 117, ../sass/hausenn/_hausennGallery.scss */
+/* line 159, ../sass/hausenn/_hausennGallery.scss */
 img {
   margin-bottom: -4px;
 }
 
-/* line 121, ../sass/hausenn/_hausennGallery.scss */
+/* line 163, ../sass/hausenn/_hausennGallery.scss */
 .demo {
   filter: brightness(50%);
 }
 
-/* line 125, ../sass/hausenn/_hausennGallery.scss */
+/* line 167, ../sass/hausenn/_hausennGallery.scss */
 .active,
 .demo:hover {
   filter: brightness(100%);
 }
 
-/* line 130, ../sass/hausenn/_hausennGallery.scss */
+/* line 172, ../sass/hausenn/_hausennGallery.scss */
 img.hover-shadow {
   transition: 0.3s;
 }
 
-/* line 134, ../sass/hausenn/_hausennGallery.scss */
+/* line 176, ../sass/hausenn/_hausennGallery.scss */
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -948,7 +943,7 @@ footer .contactName .copyright {
   padding-top: 30px;
 }
 
-/* line 12, ../sass/hausenn.scss */
+/* line 11, ../sass/hausenn.scss */
 footer {
   background-color: #dacbc7;
 }

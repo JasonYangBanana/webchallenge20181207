@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700');
 
 body {
     margin: 0;
@@ -8,9 +9,59 @@ body {
     box-sizing: border-box;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 30% 800px;
+    grid-gap: 5%;
+    margin-top: 30px;
+}
+.accordion {
+    
+}
+.album {
+    
+}
 
 /*accordion*/
-
+body {
+    .accordionLists {
+        width: 350px;
+        height: 768px;
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        transition: 2s;
+        letter-spacing: 8px;
+        font-family: 'Open Sans', sans-serif;
+        &.show{
+            right: 0;
+        }
+        div[data-accordion-group]{
+            color: #333;
+            margin-left: 50px;
+            transform: translateY(150px);
+            .accordion{
+                div[data-control]{
+                    font-size: 36px;
+                    font-weight: 600;
+                    padding: 2px 8px;
+                }
+                ul{
+                    padding-left: 24px;
+                    .subtitle{
+                        font-size: 24px;
+                        padding: 2px 8px;
+                        .item{
+                            font-size: 24px;
+                            font-weight: 300;
+                            padding: 4px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*album*/
@@ -26,25 +77,22 @@ body {
 
 .column {
     float: left;
-    width: 80px;
-    padding: 0 10px 0 0;
+    width: 70px;
 }
 .column::after {
     padding: 0;
 }
 .columnAll {
-    padding-top: 50px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-gap: 10px;
+    justify-self: center;
 }
 
 /* The Modal (background) */
 .modal {
     display: block;
-    z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -54,8 +102,9 @@ body {
 .modal-content {
     // position: relative;
     padding: 0;
-    max-width: 600px;
+    max-width: 750px;
     display: grid;
+    // margin-left: auto;
 }
 
 /* The Close Button */
@@ -77,8 +126,8 @@ body {
 
 .mySlides {
     display: none;
-    width: 80%;
     margin: 0px auto;
+    width: 70%;
 }
 
 // .cursor {
@@ -86,12 +135,6 @@ body {
 // }
 
 /* Next & previous buttons */
-.prev {
-    left: -10%;
-}
-.next {
-    right: -10%;
-}
 .prev,
 .next {
     cursor: pointer;
@@ -102,10 +145,9 @@ body {
     font-size: 20px;
     transition: 0.6s ease;
     user-select: none;
+    align-self: center;
 }
 
-
-/* Number text (1/3 etc) */
 .numbertext {
     color: #fff;
     font-size: 12px;
