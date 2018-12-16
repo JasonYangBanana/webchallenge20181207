@@ -77,14 +77,13 @@ a {
 }
 
 .parallax {
-  // overflow: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
   perspective: 1px;
-  // &::-webkit-scrollbar {
-  //     width: 0;
-  //  }
 }
 
 .parallax__group {

@@ -592,8 +592,12 @@ a:hover {
   overflow-x: hidden;
   perspective: 1px;
 }
+/* line 80, ../sass/hausenn/_hausennMain.scss */
+.parallax::-webkit-scrollbar {
+  display: none;
+}
 
-/* line 90, ../sass/hausenn/_hausennMain.scss */
+/* line 89, ../sass/hausenn/_hausennMain.scss */
 .parallax__group {
   position: relative;
   height: 768px;
@@ -601,93 +605,93 @@ a:hover {
   transform-style: preserve-3d;
 }
 
-/* line 98, ../sass/hausenn/_hausennMain.scss */
+/* line 97, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--fore {
   position: absolute;
   transform: translateZ(0px) scale(1);
   z-index: 1;
 }
 
-/* line 104, ../sass/hausenn/_hausennMain.scss */
+/* line 103, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--base {
   position: absolute;
   transform: translateZ(-1px) scale(1);
 }
 
-/* line 109, ../sass/hausenn/_hausennMain.scss */
+/* line 108, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back {
   position: absolute;
   transform: translateZ(-2px) scale(3.2);
   z-index: -1;
 }
 
-/* line 115, ../sass/hausenn/_hausennMain.scss */
+/* line 114, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back2 {
   position: absolute;
   transform: translateZ(-3px) scale(2);
   z-index: -2;
 }
 
-/* line 122, ../sass/hausenn/_hausennMain.scss */
+/* line 121, ../sass/hausenn/_hausennMain.scss */
 .idea .enContent {
   transform: translateX(450px) translateY(15px);
 }
-/* line 126, ../sass/hausenn/_hausennMain.scss */
+/* line 125, ../sass/hausenn/_hausennMain.scss */
 .idea .banner1 {
   transform: translateX(-550px) translateY(-450px);
 }
-/* line 130, ../sass/hausenn/_hausennMain.scss */
+/* line 129, ../sass/hausenn/_hausennMain.scss */
 .idea .banner2 {
   transform: translateX(-350px) translateY(-100px);
 }
-/* line 134, ../sass/hausenn/_hausennMain.scss */
+/* line 133, ../sass/hausenn/_hausennMain.scss */
 .idea .nudeBlock {
   background-color: #dacbc7;
   width: 1023px;
   height: 388px;
   transform: translateX(-110px) translateY(0px) scale(0.85);
 }
-/* line 141, ../sass/hausenn/_hausennMain.scss */
+/* line 140, ../sass/hausenn/_hausennMain.scss */
 .idea .cnContent {
   transform: translateX(900px) translateY(50px);
 }
 
-/* line 147, ../sass/hausenn/_hausennMain.scss */
+/* line 146, ../sass/hausenn/_hausennMain.scss */
 .source .blackBlock {
   background-color: #000;
   width: 55px;
   height: 7px;
   transform: translateX(100px) translateY(250px);
 }
-/* line 154, ../sass/hausenn/_hausennMain.scss */
+/* line 153, ../sass/hausenn/_hausennMain.scss */
 .source .enContent {
   transform: translateX(150px) translateY(700px) scale(2);
 }
-/* line 158, ../sass/hausenn/_hausennMain.scss */
+/* line 157, ../sass/hausenn/_hausennMain.scss */
 .source .cnContent {
   transform: translateX(900px) translateY(1200px);
 }
 
-/* line 165, ../sass/hausenn/_hausennMain.scss */
+/* line 164, ../sass/hausenn/_hausennMain.scss */
 .couture .subTitle {
   transform: translateX(900px) translateY(800px);
 }
-/* line 169, ../sass/hausenn/_hausennMain.scss */
+/* line 168, ../sass/hausenn/_hausennMain.scss */
 .couture .banner {
   transform: translateX(-250px) translateY(600px);
 }
-/* line 173, ../sass/hausenn/_hausennMain.scss */
+/* line 172, ../sass/hausenn/_hausennMain.scss */
 .couture .rectTitleCn {
   transform: translateX(1080px) translateY(850px);
 }
-/* line 177, ../sass/hausenn/_hausennMain.scss */
+/* line 176, ../sass/hausenn/_hausennMain.scss */
 .couture .nudeBlock {
   width: 460px;
   height: 425px;
   background-color: #dacbc7;
   transform: translateX(450px) translateY(300px);
 }
-/* line 184, ../sass/hausenn/_hausennMain.scss */
+/* line 183, ../sass/hausenn/_hausennMain.scss */
 .couture .blackBlock {
   width: 135px;
   height: 28px;
@@ -695,26 +699,26 @@ a:hover {
   transform: translateX(1080px) translateY(900px) scale(0.6);
 }
 
-/* line 194, ../sass/hausenn/_hausennMain.scss */
+/* line 193, ../sass/hausenn/_hausennMain.scss */
 .collections .subTitle {
   transform: translateX(100px) translateY(2000px);
 }
-/* line 198, ../sass/hausenn/_hausennMain.scss */
+/* line 197, ../sass/hausenn/_hausennMain.scss */
 .collections .rectTitleCn {
   transform: translateX(40px) translateY(1700px);
 }
-/* line 202, ../sass/hausenn/_hausennMain.scss */
+/* line 201, ../sass/hausenn/_hausennMain.scss */
 .collections .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(100px) translateY(2300px);
 }
-/* line 209, ../sass/hausenn/_hausennMain.scss */
+/* line 208, ../sass/hausenn/_hausennMain.scss */
 .collections .banner {
   transform: translateX(-280px) translateY(1800px);
 }
-/* line 213, ../sass/hausenn/_hausennMain.scss */
+/* line 212, ../sass/hausenn/_hausennMain.scss */
 .collections .nudeBlock {
   width: 489px;
   height: 600px;
@@ -722,33 +726,33 @@ a:hover {
   transform: translateX(-180px) translateY(600px);
 }
 
-/* line 223, ../sass/hausenn/_hausennMain.scss */
+/* line 222, ../sass/hausenn/_hausennMain.scss */
 .seasons .subTitle {
   transform: translateX(600px) translateY(3700px);
 }
-/* line 227, ../sass/hausenn/_hausennMain.scss */
+/* line 226, ../sass/hausenn/_hausennMain.scss */
 .seasons .rectTitleCn {
   transform: translateX(720px) translateY(3200px);
 }
-/* line 231, ../sass/hausenn/_hausennMain.scss */
+/* line 230, ../sass/hausenn/_hausennMain.scss */
 .seasons .nudeBlock {
   width: 180px;
   height: 216px;
   background-color: #dacbc7;
   transform: translateX(720px) translateY(3450px) scale(2);
 }
-/* line 238, ../sass/hausenn/_hausennMain.scss */
+/* line 237, ../sass/hausenn/_hausennMain.scss */
 .seasons .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(1750px) translateY(4500px);
 }
-/* line 245, ../sass/hausenn/_hausennMain.scss */
+/* line 244, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner1 {
   transform: translateX(400px) translateY(1000px) scale(0.5);
 }
-/* line 249, ../sass/hausenn/_hausennMain.scss */
+/* line 248, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner2 {
   transform: translateX(400px) translateY(2200px);
 }

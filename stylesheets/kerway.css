@@ -141,6 +141,45 @@ table {
   border-spacing: 0;
 }
 
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 2px;
+  }
+}
+/* line 1, ../sass/partial/_loadingPage.scss */
+.loadingPage {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 2s;
+}
+/* line 13, ../sass/partial/_loadingPage.scss */
+.loadingPage img {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  animation-name: flicker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* line 1, ../sass/partial/_menu.scss */
 .menu {
   z-index: 1;
@@ -231,45 +270,6 @@ table {
   margin-right: 20px;
 }
 
-@keyframes bounce {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: 2px;
-  }
-}
-/* line 1, ../sass/partial/_loadingPage.scss */
-.loadingPage {
-  position: relative;
-  z-index: 10;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background-color: #000;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 2s;
-}
-/* line 13, ../sass/partial/_loadingPage.scss */
-.loadingPage img {
-  width: 200px;
-  height: 200px;
-  opacity: 1;
-  animation-name: flicker;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes flicker {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 /* line 1, ../sass/partial/_burgerMenu.scss */
 .burgerMenu {
   z-index: 2;
@@ -508,28 +508,32 @@ body::-webkit-scrollbar {
   overflow-y: auto;
   background-color: #fff;
 }
+/* line 11, ../sass/kerway/_kerwayMain.scss */
+.parallax::-webkit-scrollbar {
+  display: none;
+}
 
-/* line 12, ../sass/kerway/_kerwayMain.scss */
+/* line 16, ../sass/kerway/_kerwayMain.scss */
 .kerwayTitle {
   width: 192px;
   margin: 0 auto;
   height: 32px;
   margin-bottom: 175px;
 }
-/* line 18, ../sass/kerway/_kerwayMain.scss */
+/* line 22, ../sass/kerway/_kerwayMain.scss */
 .kerwayTitle img {
   width: 100%;
   height: 100%;
 }
 
-/* line 24, ../sass/kerway/_kerwayMain.scss */
+/* line 28, ../sass/kerway/_kerwayMain.scss */
 .group1 {
   width: 100%;
   position: relative;
   margin-bottom: 300px;
 }
 
-/* line 28, ../sass/kerway/_kerwayMain.scss */
+/* line 32, ../sass/kerway/_kerwayMain.scss */
 .group2 {
   width: 100%;
   position: relative;
@@ -539,7 +543,7 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/kerway/_kerwayMain.scss */
+/* line 39, ../sass/kerway/_kerwayMain.scss */
 .group3 {
   width: 100%;
   position: relative;
@@ -548,12 +552,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-/* line 41, ../sass/kerway/_kerwayMain.scss */
+/* line 45, ../sass/kerway/_kerwayMain.scss */
 .kerwayHero {
   width: 100%;
 }
 
-/* line 45, ../sass/kerway/_kerwayMain.scss */
+/* line 49, ../sass/kerway/_kerwayMain.scss */
 .bannerSlogan {
   font-size: 44px;
   font-family: sans-serif;
@@ -564,7 +568,7 @@ body::-webkit-scrollbar {
   top: -370px;
 }
 
-/* line 52, ../sass/kerway/_kerwayMain.scss */
+/* line 56, ../sass/kerway/_kerwayMain.scss */
 .group2Dash {
   width: 36px;
   height: 4px;
@@ -574,7 +578,7 @@ body::-webkit-scrollbar {
   top: -60px;
 }
 
-/* line 61, ../sass/kerway/_kerwayMain.scss */
+/* line 65, ../sass/kerway/_kerwayMain.scss */
 .group3Dash {
   width: 36px;
   height: 4px;
@@ -584,7 +588,7 @@ body::-webkit-scrollbar {
   top: 270px;
 }
 
-/* line 70, ../sass/kerway/_kerwayMain.scss */
+/* line 74, ../sass/kerway/_kerwayMain.scss */
 .contextTitle {
   position: absolute;
   left: 70px;
@@ -594,7 +598,7 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 76, ../sass/kerway/_kerwayMain.scss */
+/* line 80, ../sass/kerway/_kerwayMain.scss */
 .contextSlogn {
   position: absolute;
   font-size: 19px;
@@ -606,7 +610,7 @@ body::-webkit-scrollbar {
   left: 380px;
 }
 
-/* line 84, ../sass/kerway/_kerwayMain.scss */
+/* line 88, ../sass/kerway/_kerwayMain.scss */
 .contentStyle {
   font-size: 14px;
   font-family: sans-serif;
@@ -619,7 +623,7 @@ body::-webkit-scrollbar {
   margin-left: 70px;
 }
 
-/* line 93, ../sass/kerway/_kerwayMain.scss */
+/* line 97, ../sass/kerway/_kerwayMain.scss */
 .jobsWords {
   font-size: 14px;
   font-family: sans-serif;
@@ -627,27 +631,27 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 97, ../sass/kerway/_kerwayMain.scss */
+/* line 101, ../sass/kerway/_kerwayMain.scss */
 .designer {
   position: relative;
 }
-/* line 100, ../sass/kerway/_kerwayMain.scss */
+/* line 104, ../sass/kerway/_kerwayMain.scss */
 .designer img {
   width: 390px;
   height: 520px;
 }
-/* line 104, ../sass/kerway/_kerwayMain.scss */
+/* line 108, ../sass/kerway/_kerwayMain.scss */
 .designer img:first-child {
   margin-right: 200px;
 }
-/* line 108, ../sass/kerway/_kerwayMain.scss */
+/* line 112, ../sass/kerway/_kerwayMain.scss */
 .designer img:nth-child(2) {
   position: absolute;
   z-index: -1;
   top: 100px;
   left: 100px;
 }
-/* line 115, ../sass/kerway/_kerwayMain.scss */
+/* line 119, ../sass/kerway/_kerwayMain.scss */
 .designer img:nth-child(3) {
   position: absolute;
   z-index: -2;
@@ -655,7 +659,7 @@ body::-webkit-scrollbar {
   left: 200px;
 }
 
-/* line 124, ../sass/kerway/_kerwayMain.scss */
+/* line 128, ../sass/kerway/_kerwayMain.scss */
 .context {
   position: relative;
 }
