@@ -8,6 +8,7 @@ let contactUsImage = document.querySelector(".contantUsImage")
 let contactUs = document.querySelector(".contactUs")
 let menuStatus = false
 let contactUsStatus = false
+let videoStatus = false
 let buggerMenu = document.querySelector(".burgerMenu")
 contactUsImage.addEventListener("click", function() {
   burgerMenuChange()
@@ -19,6 +20,9 @@ buggerMenu.addEventListener("click", function() {
   if (contactUsStatus) {
     contactUs.style.right = "-100vw";
     contactUsStatus = !contactUsStatus
+  } else if (videoStatus) {
+    $(".modal").css("display", "none");
+    videoStatus = !videoStatus
   } else {
     animationMenu()
   }
@@ -128,3 +132,9 @@ $(document).ready(function() {
     }, 1000);
   });
 });
+$(".masonry img").click(function() {
+  $(".modal").css("display", "block");
+  burgerMenuChange();
+  videoStatus = !videoStatus
+
+})
