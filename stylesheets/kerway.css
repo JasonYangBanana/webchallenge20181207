@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
 /* line 5, ../sass/partial/_reset.scss */
 a,
 abbr,
@@ -464,39 +465,54 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
-/* line 1, ../sass/kerway/_kerwayMain.scss */
-.parallax {
-  margin: 0 auto;
+/* line 3, ../sass/kerway/_kerwayMain.scss */
+body {
+  font-family: 'Noto Sans', sans-serif;
   box-sizing: border-box;
-  padding: 50px 100px 0;
+}
+
+/* line 8, ../sass/kerway/_kerwayMain.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 12, ../sass/kerway/_kerwayMain.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../sass/kerway/_kerwayMain.scss */
+.parallax {
   perspective: 1px;
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-/* line 12, ../sass/kerway/_kerwayMain.scss */
+/* line 26, ../sass/kerway/_kerwayMain.scss */
 .kerwayTitle {
   width: 192px;
   margin: 0 auto;
   height: 32px;
   margin-bottom: 175px;
 }
-/* line 18, ../sass/kerway/_kerwayMain.scss */
+/* line 32, ../sass/kerway/_kerwayMain.scss */
 .kerwayTitle img {
   width: 100%;
   height: 100%;
 }
 
-/* line 24, ../sass/kerway/_kerwayMain.scss */
+/* line 38, ../sass/kerway/_kerwayMain.scss */
 .group1 {
   width: 100%;
   position: relative;
   margin-bottom: 300px;
 }
 
-/* line 28, ../sass/kerway/_kerwayMain.scss */
+/* line 42, ../sass/kerway/_kerwayMain.scss */
 .group2 {
   width: 100%;
   position: relative;
@@ -506,7 +522,7 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-/* line 35, ../sass/kerway/_kerwayMain.scss */
+/* line 49, ../sass/kerway/_kerwayMain.scss */
 .group3 {
   width: 100%;
   position: relative;
@@ -515,12 +531,12 @@ body::-webkit-scrollbar {
   justify-content: space-between;
 }
 
-/* line 41, ../sass/kerway/_kerwayMain.scss */
+/* line 55, ../sass/kerway/_kerwayMain.scss */
 .kerwayHero {
   width: 100%;
 }
 
-/* line 45, ../sass/kerway/_kerwayMain.scss */
+/* line 59, ../sass/kerway/_kerwayMain.scss */
 .bannerSlogan {
   font-size: 44px;
   font-family: sans-serif;
@@ -531,7 +547,7 @@ body::-webkit-scrollbar {
   top: -370px;
 }
 
-/* line 52, ../sass/kerway/_kerwayMain.scss */
+/* line 66, ../sass/kerway/_kerwayMain.scss */
 .group2Dash {
   width: 36px;
   height: 4px;
@@ -541,7 +557,7 @@ body::-webkit-scrollbar {
   top: -60px;
 }
 
-/* line 61, ../sass/kerway/_kerwayMain.scss */
+/* line 75, ../sass/kerway/_kerwayMain.scss */
 .group3Dash {
   width: 36px;
   height: 4px;
@@ -551,7 +567,7 @@ body::-webkit-scrollbar {
   top: 270px;
 }
 
-/* line 70, ../sass/kerway/_kerwayMain.scss */
+/* line 84, ../sass/kerway/_kerwayMain.scss */
 .contextTitle {
   position: absolute;
   left: 70px;
@@ -561,7 +577,7 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 76, ../sass/kerway/_kerwayMain.scss */
+/* line 90, ../sass/kerway/_kerwayMain.scss */
 .contextSlogn {
   position: absolute;
   font-size: 19px;
@@ -573,7 +589,7 @@ body::-webkit-scrollbar {
   left: 380px;
 }
 
-/* line 84, ../sass/kerway/_kerwayMain.scss */
+/* line 98, ../sass/kerway/_kerwayMain.scss */
 .contentStyle {
   font-size: 14px;
   font-family: sans-serif;
@@ -586,7 +602,7 @@ body::-webkit-scrollbar {
   margin-left: 70px;
 }
 
-/* line 93, ../sass/kerway/_kerwayMain.scss */
+/* line 107, ../sass/kerway/_kerwayMain.scss */
 .jobsWords {
   font-size: 14px;
   font-family: sans-serif;
@@ -594,27 +610,27 @@ body::-webkit-scrollbar {
   letter-spacing: 2px;
 }
 
-/* line 97, ../sass/kerway/_kerwayMain.scss */
+/* line 111, ../sass/kerway/_kerwayMain.scss */
 .designer {
   position: relative;
 }
-/* line 100, ../sass/kerway/_kerwayMain.scss */
+/* line 114, ../sass/kerway/_kerwayMain.scss */
 .designer img {
   width: 390px;
   height: 520px;
 }
-/* line 104, ../sass/kerway/_kerwayMain.scss */
+/* line 118, ../sass/kerway/_kerwayMain.scss */
 .designer img:first-child {
   margin-right: 200px;
 }
-/* line 108, ../sass/kerway/_kerwayMain.scss */
+/* line 122, ../sass/kerway/_kerwayMain.scss */
 .designer img:nth-child(2) {
   position: absolute;
   z-index: -1;
   top: 100px;
   left: 100px;
 }
-/* line 115, ../sass/kerway/_kerwayMain.scss */
+/* line 129, ../sass/kerway/_kerwayMain.scss */
 .designer img:nth-child(3) {
   position: absolute;
   z-index: -2;
@@ -622,7 +638,7 @@ body::-webkit-scrollbar {
   left: 200px;
 }
 
-/* line 124, ../sass/kerway/_kerwayMain.scss */
+/* line 138, ../sass/kerway/_kerwayMain.scss */
 .context {
   position: relative;
 }
