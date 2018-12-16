@@ -723,154 +723,100 @@ a:hover {
 /* line 2, ../sass/hausenn/_hausennGallery.scss */
 body {
   margin: 0;
+  background-color: #f3eff1;
 }
 
-/* line 6, ../sass/hausenn/_hausennGallery.scss */
+/* line 7, ../sass/hausenn/_hausennGallery.scss */
 * {
   box-sizing: border-box;
 }
 
 /*accordion*/
-/* line 12, ../sass/hausenn/_hausennGallery.scss */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-/* line 25, ../sass/hausenn/_hausennGallery.scss */
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-/* line 29, ../sass/hausenn/_hausennGallery.scss */
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
 /*album*/
-/* line 38, ../sass/hausenn/_hausennGallery.scss */
+/* line 17, ../sass/hausenn/_hausennGallery.scss */
 .row > .column {
   padding: 0 8px;
 }
 
-/* line 42, ../sass/hausenn/_hausennGallery.scss */
+/* line 21, ../sass/hausenn/_hausennGallery.scss */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 48, ../sass/hausenn/_hausennGallery.scss */
+/* line 27, ../sass/hausenn/_hausennGallery.scss */
 .column {
   float: left;
-  width: 12%;
+  width: 80px;
   padding: 0 10px 0 0;
 }
 
-/* line 53, ../sass/hausenn/_hausennGallery.scss */
+/* line 32, ../sass/hausenn/_hausennGallery.scss */
 .column::after {
   padding: 0;
 }
 
+/* line 35, ../sass/hausenn/_hausennGallery.scss */
+.columnAll {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 10px;
+}
+
 /* The Modal (background) */
-/* line 59, ../sass/hausenn/_hausennGallery.scss */
+/* line 43, ../sass/hausenn/_hausennGallery.scss */
 .modal {
   display: block;
   z-index: 1;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #f3eff1;
 }
 
 /* Modal Content */
-/* line 72, ../sass/hausenn/_hausennGallery.scss */
+/* line 54, ../sass/hausenn/_hausennGallery.scss */
 .modal-content {
-  position: relative;
-  margin-left: auto;
   padding: 0;
-  width: 90%;
-  max-width: 800px;
+  max-width: 600px;
+  display: grid;
 }
 
 /* The Close Button */
-/* line 81, ../sass/hausenn/_hausennGallery.scss */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-/* line 90, ../sass/hausenn/_hausennGallery.scss */
-.close:hover,
-.close:focus {
-  color: #333;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* line 97, ../sass/hausenn/_hausennGallery.scss */
+/* line 78, ../sass/hausenn/_hausennGallery.scss */
 .mySlides {
   display: none;
-}
-
-/* line 101, ../sass/hausenn/_hausennGallery.scss */
-.cursor {
-  cursor: pointer;
+  width: 80%;
+  margin: 0px auto;
 }
 
 /* Next & previous buttons */
-/* line 106, ../sass/hausenn/_hausennGallery.scss */
+/* line 89, ../sass/hausenn/_hausennGallery.scss */
+.prev {
+  left: -10%;
+}
+
+/* line 92, ../sass/hausenn/_hausennGallery.scss */
+.next {
+  right: -10%;
+}
+
+/* line 95, ../sass/hausenn/_hausennGallery.scss */
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
   padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
+  color: #333;
   font-size: 20px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-/* line 124, ../sass/hausenn/_hausennGallery.scss */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-/* line 130, ../sass/hausenn/_hausennGallery.scss */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
-/* line 136, ../sass/hausenn/_hausennGallery.scss */
+/* line 109, ../sass/hausenn/_hausennGallery.scss */
 .numbertext {
   color: #fff;
   font-size: 12px;
@@ -879,34 +825,28 @@ body {
   top: 0;
 }
 
-/* line 144, ../sass/hausenn/_hausennGallery.scss */
+/* line 117, ../sass/hausenn/_hausennGallery.scss */
 img {
   margin-bottom: -4px;
 }
 
-/* line 148, ../sass/hausenn/_hausennGallery.scss */
-.caption-container {
-  text-align: center;
-  padding: 2px 16px;
-}
-
-/* line 153, ../sass/hausenn/_hausennGallery.scss */
+/* line 121, ../sass/hausenn/_hausennGallery.scss */
 .demo {
-  opacity: 0.6;
+  filter: brightness(50%);
 }
 
-/* line 157, ../sass/hausenn/_hausennGallery.scss */
+/* line 125, ../sass/hausenn/_hausennGallery.scss */
 .active,
 .demo:hover {
-  opacity: 1;
+  filter: brightness(100%);
 }
 
-/* line 162, ../sass/hausenn/_hausennGallery.scss */
+/* line 130, ../sass/hausenn/_hausennGallery.scss */
 img.hover-shadow {
   transition: 0.3s;
 }
 
-/* line 166, ../sass/hausenn/_hausennGallery.scss */
+/* line 134, ../sass/hausenn/_hausennGallery.scss */
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
