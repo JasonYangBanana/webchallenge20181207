@@ -1,5 +1,5 @@
 body{
-    .accordionLists {
+    .gallery{
         width: 100vw;
         height: 100vh;
         position: fixed;
@@ -9,28 +9,30 @@ body{
         transition: 2s;
         background-color: black;
         opacity: 0.8;
-        &.show{
+        &.show {
             right: 0;
         }
-        div[data-accordion-group]{
-            color: white;
-            margin-left: 50px;
-            transform: translateY(150px);
-            .accordion{
-                div[data-control]{
-                    font-size: 40px;
-                    font-weight: 600;
-                    padding: 2px 8px;
-                }
-                ul{
-                    padding-left: 24px;
-                    .subtitle{
-                        font-size: 28px;
+        .accordionLists {
+            div[data-accordion-group]{
+                color: white;
+                margin-left: 50px;
+                transform: translateY(150px);
+                .accordion{
+                    div[data-control]{
+                        font-size: 40px;
+                        font-weight: 600;
                         padding: 2px 8px;
-                        .item{
+                    }
+                    ul{
+                        padding-left: 24px;
+                        .subtitle{
                             font-size: 28px;
-                            font-weight: 300;
-                            padding: 4px 8px;
+                            padding: 2px 8px;
+                            .item{
+                                font-size: 28px;
+                                font-weight: 300;
+                                padding: 4px 8px;
+                            }
                         }
                     }
                 }

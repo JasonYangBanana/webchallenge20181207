@@ -5,7 +5,6 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans:300,400,700");
-/* line 5, ../sass/partial/_reset.scss */
 a,
 abbr,
 acronym,
@@ -96,7 +95,6 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 94, ../sass/partial/_reset.scss */
 article,
 aside,
 details,
@@ -111,24 +109,20 @@ section {
   display: block;
 }
 
-/* line 108, ../sass/partial/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 112, ../sass/partial/_reset.scss */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 117, ../sass/partial/_reset.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 122, ../sass/partial/_reset.scss */
 blockquote:after,
 blockquote:before,
 q:after,
@@ -137,7 +131,6 @@ q:before {
   content: none;
 }
 
-/* line 130, ../sass/partial/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -151,7 +144,6 @@ table {
     top: 2px;
   }
 }
-/* line 1, ../sass/partial/_loadingPage.scss */
 .loadingPage {
   position: relative;
   z-index: 10;
@@ -164,7 +156,6 @@ table {
   overflow: hidden;
   transition: 2s;
 }
-/* line 13, ../sass/partial/_loadingPage.scss */
 .loadingPage img {
   width: 200px;
   height: 200px;
@@ -182,7 +173,6 @@ table {
     opacity: 0;
   }
 }
-/* line 1, ../sass/partial/_menu.scss */
 .menu {
   z-index: 1;
   height: 100vh;
@@ -196,7 +186,6 @@ table {
   transition: 2s;
 }
 
-/* line 14, ../sass/partial/_menu.scss */
 .menuContent {
   height: 100%;
   display: flex;
@@ -205,28 +194,23 @@ table {
   align-items: flex-start;
 }
 
-/* line 23, ../sass/partial/_menu.scss */
 .logo img {
   width: 164px;
   height: 18px;
 }
 
-/* line 29, ../sass/partial/_menu.scss */
 .subPageLogo {
   display: flex;
   margin-top: 20px;
 }
-/* line 33, ../sass/partial/_menu.scss */
 .subPageLogo img {
   width: 100%;
 }
-/* line 38, ../sass/partial/_menu.scss */
 .subPageLogo a:first-child {
   width: 107px;
   height: 18px;
   padding-right: 15px;
 }
-/* line 44, ../sass/partial/_menu.scss */
 .subPageLogo a:nth-child(2) {
   width: 92px;
   height: 18px;
@@ -236,43 +220,36 @@ table {
   border-style: solid;
   border-color: #fff;
 }
-/* line 54, ../sass/partial/_menu.scss */
 .subPageLogo a:last-child {
   width: 100px;
   height: 18px;
   padding-left: 15px;
 }
 
-/* line 62, ../sass/partial/_menu.scss */
 .menuMain {
   display: flex;
   flex-direction: column;
   position: relative;
   top: -67.5px;
 }
-/* line 69, ../sass/partial/_menu.scss */
 .menuMain img:first-child {
   width: 230px;
   height: 40px;
 }
-/* line 74, ../sass/partial/_menu.scss */
 .menuMain img:last-child {
   margin-top: 55px;
   width: 199px;
   height: 40px;
 }
 
-/* line 82, ../sass/partial/_menu.scss */
 .menuLink {
   color: #fff;
   font-size: 16px;
 }
-/* line 86, ../sass/partial/_menu.scss */
 .menuLink i {
   margin-right: 20px;
 }
 
-/* line 1, ../sass/partial/_burgerMenu.scss */
 .burgerMenu {
   z-index: 2;
   width: 39px;
@@ -285,13 +262,11 @@ table {
   cursor: pointer;
 }
 @media (max-width: 566px) {
-  /* line 1, ../sass/partial/_burgerMenu.scss */
   .burgerMenu {
     top: 35px;
     left: 20px;
   }
 }
-/* line 16, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span {
   display: block;
   position: absolute;
@@ -302,68 +277,54 @@ table {
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-/* line 27, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span:nth-child(even) {
   left: 60%;
   border-radius: 0 5px 5px 0;
 }
-/* line 32, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span:nth-child(odd) {
   left: 0;
   border-radius: 5px 0 0 5px;
 }
-/* line 37, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span:nth-child(1), .burgerMenu span:nth-child(2) {
   top: 0;
 }
-/* line 42, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span:nth-child(3), .burgerMenu span:nth-child(4) {
   top: 8px;
 }
-/* line 47, ../sass/partial/_burgerMenu.scss */
 .burgerMenu span:nth-child(5), .burgerMenu span:nth-child(6) {
   top: 16px;
 }
-/* line 52, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(1), .burgerMenu.open span:nth-child(6) {
   transform: rotate(45deg);
 }
-/* line 57, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(2), .burgerMenu.open span:nth-child(5) {
   transform: rotate(-45deg);
 }
-/* line 62, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(1) {
   left: 4px;
   top: 7px;
 }
-/* line 67, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(2) {
   left: calc(50% - 5px);
   top: 7px;
 }
-/* line 72, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(3) {
   left: -50%;
   opacity: 0;
 }
-/* line 77, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(4) {
   left: 100%;
   opacity: 0;
 }
-/* line 82, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(5) {
   left: 4px;
   top: 18px;
 }
-/* line 87, ../sass/partial/_burgerMenu.scss */
 .burgerMenu.open span:nth-child(6) {
   left: calc(50% - 5px);
   top: 18px;
 }
 
-/* line 1, ../sass/partial/_contactUs.scss */
 .contactUs {
   top: 0;
   width: 100vw;
@@ -374,13 +335,11 @@ table {
   transition: 2s;
   background-color: #fff;
 }
-/* line 11, ../sass/partial/_contactUs.scss */
 .contactUs img {
   width: 100%;
   height: auto;
 }
 
-/* line 17, ../sass/partial/_contactUs.scss */
 .contantUsImage {
   z-index: 2;
   position: fixed;
@@ -390,23 +349,19 @@ table {
   height: 164px;
 }
 @media (max-width: 768px) {
-  /* line 17, ../sass/partial/_contactUs.scss */
   .contantUsImage {
     display: none;
   }
 }
 
-/* line 1, ../sass/hausenn/_hausennBanner.scss */
 body {
   background-color: #fff;
 }
 
-/* line 5, ../sass/hausenn/_hausennBanner.scss */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* line 9, ../sass/hausenn/_hausennBanner.scss */
 .hausennBackground {
   position: absolute;
   width: 100vw;
@@ -419,7 +374,6 @@ body::-webkit-scrollbar {
   transition: linear 100ms;
 }
 
-/* line 13, ../sass/hausenn/_hausennBanner.scss */
 .hausennBannerMain {
   width: 100vw;
   height: 100vh;
@@ -434,11 +388,9 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-/* line 27, ../sass/hausenn/_hausennBanner.scss */
 .hausennBannerContent {
   position: relative;
 }
-/* line 30, ../sass/hausenn/_hausennBanner.scss */
 .hausennBannerContent::before {
   content: " ";
   position: absolute;
@@ -449,24 +401,20 @@ body::-webkit-scrollbar {
   background-color: #fff;
 }
 @media (max-width: 1024px) {
-  /* line 30, ../sass/hausenn/_hausennBanner.scss */
   .hausennBannerContent::before {
     display: none;
   }
 }
-/* line 43, ../sass/hausenn/_hausennBanner.scss */
 .hausennBannerContent .heroImage {
   width: 510px;
   height: 510px;
 }
 @media (max-width: 566px) {
-  /* line 43, ../sass/hausenn/_hausennBanner.scss */
   .hausennBannerContent .heroImage {
     width: 320px;
     height: 320px;
   }
 }
-/* line 52, ../sass/hausenn/_hausennBanner.scss */
 .hausennBannerContent::after {
   content: " ";
   position: absolute;
@@ -476,13 +424,11 @@ body::-webkit-scrollbar {
   background-color: #fff;
 }
 @media (max-width: 1024px) {
-  /* line 52, ../sass/hausenn/_hausennBanner.scss */
   .hausennBannerContent::after {
     display: none;
   }
 }
 
-/* line 65, ../sass/hausenn/_hausennBanner.scss */
 .mouseButton {
   margin: 0 auto;
   width: 24px;
@@ -495,27 +441,22 @@ body::-webkit-scrollbar {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-/* line 35, ../sass/partial/_mixin.scss */
 .mouseButton img {
   width: 100%;
 }
 
-/* line 4, ../sass/hausenn/_hausennMain.scss */
 body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* line 8, ../sass/hausenn/_hausennMain.scss */
 a {
   color: #000;
   text-decoration: none;
 }
-/* line 12, ../sass/hausenn/_hausennMain.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 17, ../sass/hausenn/_hausennMain.scss */
 .subTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
@@ -523,7 +464,6 @@ a:hover {
   letter-spacing: 10px;
 }
 
-/* line 24, ../sass/hausenn/_hausennMain.scss */
 .rectTitleCn {
   font-weight: 300;
   font-size: 16px;
@@ -534,42 +474,35 @@ a:hover {
   height: 117px;
 }
 
-/* line 34, ../sass/hausenn/_hausennMain.scss */
 .enContent {
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 2px;
 }
 
-/* line 40, ../sass/hausenn/_hausennMain.scss */
 .cnContent {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 3px;
 }
 
-/* line 46, ../sass/hausenn/_hausennMain.scss */
 .animated {
   animation-duration: 10s;
   animation-iteration-count: 3;
 }
 
-/* line 51, ../sass/hausenn/_hausennMain.scss */
 .hausennTitle {
   width: 200px;
   margin: 20px auto 0;
 }
-/* line 55, ../sass/hausenn/_hausennMain.scss */
 .hausennTitle img {
   width: 200px;
 }
 
-/* line 60, ../sass/hausenn/_hausennMain.scss */
 .hausennLogo img {
   width: 27px;
 }
 
-/* line 64, ../sass/hausenn/_hausennMain.scss */
 .hausennContent {
   position: fixed;
   right: 0;
@@ -577,29 +510,24 @@ a:hover {
   z-index: 100;
 }
 
-/* line 71, ../sass/hausenn/_hausennMain.scss */
 .section2 {
   height: 8615px;
 }
 
-/* line 75, ../sass/hausenn/_hausennMain.scss */
 .container {
   width: 100%;
 }
 
-/* line 79, ../sass/hausenn/_hausennMain.scss */
 .parallax {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
   perspective: 1px;
 }
-/* line 80, ../sass/hausenn/_hausennMain.scss */
 .parallax::-webkit-scrollbar {
   display: none;
 }
 
-/* line 89, ../sass/hausenn/_hausennMain.scss */
 .parallax__group {
   position: relative;
   height: 768px;
@@ -607,93 +535,76 @@ a:hover {
   transform-style: preserve-3d;
 }
 
-/* line 97, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--fore {
   position: absolute;
   transform: translateZ(0px) scale(1);
   z-index: 1;
 }
 
-/* line 103, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--base {
   position: absolute;
   transform: translateZ(-1px) scale(1);
 }
 
-/* line 108, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back {
   position: absolute;
   transform: translateZ(-2px) scale(3.2);
   z-index: -1;
 }
 
-/* line 114, ../sass/hausenn/_hausennMain.scss */
 .parallax__layer--back2 {
   position: absolute;
   transform: translateZ(-3px) scale(2);
   z-index: -2;
 }
 
-/* line 121, ../sass/hausenn/_hausennMain.scss */
 .idea .enContent {
   transform: translateX(450px) translateY(15px);
 }
-/* line 125, ../sass/hausenn/_hausennMain.scss */
 .idea .banner1 {
   transform: translateX(-550px) translateY(-450px);
 }
-/* line 129, ../sass/hausenn/_hausennMain.scss */
 .idea .banner2 {
   transform: translateX(-350px) translateY(-100px);
 }
-/* line 133, ../sass/hausenn/_hausennMain.scss */
 .idea .nudeBlock {
   background-color: #dacbc7;
   width: 1023px;
   height: 388px;
   transform: translateX(-110px) translateY(0px) scale(0.85);
 }
-/* line 140, ../sass/hausenn/_hausennMain.scss */
 .idea .cnContent {
   transform: translateX(900px) translateY(50px);
 }
 
-/* line 146, ../sass/hausenn/_hausennMain.scss */
 .source .blackBlock {
   background-color: #000;
   width: 55px;
   height: 7px;
   transform: translateX(100px) translateY(250px);
 }
-/* line 153, ../sass/hausenn/_hausennMain.scss */
 .source .enContent {
   transform: translateX(150px) translateY(700px) scale(2);
 }
-/* line 157, ../sass/hausenn/_hausennMain.scss */
 .source .cnContent {
   transform: translateX(900px) translateY(1200px);
 }
 
-/* line 164, ../sass/hausenn/_hausennMain.scss */
 .couture .subTitle {
   transform: translateX(900px) translateY(800px);
 }
-/* line 168, ../sass/hausenn/_hausennMain.scss */
 .couture .banner {
   transform: translateX(-250px) translateY(600px);
 }
-/* line 172, ../sass/hausenn/_hausennMain.scss */
 .couture .rectTitleCn {
   transform: translateX(1080px) translateY(850px);
 }
-/* line 176, ../sass/hausenn/_hausennMain.scss */
 .couture .nudeBlock {
   width: 460px;
   height: 425px;
   background-color: #dacbc7;
   transform: translateX(450px) translateY(300px);
 }
-/* line 183, ../sass/hausenn/_hausennMain.scss */
 .couture .blackBlock {
   width: 135px;
   height: 28px;
@@ -701,26 +612,21 @@ a:hover {
   transform: translateX(1080px) translateY(900px) scale(0.6);
 }
 
-/* line 193, ../sass/hausenn/_hausennMain.scss */
 .collections .subTitle {
   transform: translateX(100px) translateY(2000px);
 }
-/* line 197, ../sass/hausenn/_hausennMain.scss */
 .collections .rectTitleCn {
   transform: translateX(40px) translateY(1700px);
 }
-/* line 201, ../sass/hausenn/_hausennMain.scss */
 .collections .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(100px) translateY(2300px);
 }
-/* line 208, ../sass/hausenn/_hausennMain.scss */
 .collections .banner {
   transform: translateX(-280px) translateY(1800px);
 }
-/* line 212, ../sass/hausenn/_hausennMain.scss */
 .collections .nudeBlock {
   width: 489px;
   height: 600px;
@@ -728,43 +634,35 @@ a:hover {
   transform: translateX(-180px) translateY(600px);
 }
 
-/* line 222, ../sass/hausenn/_hausennMain.scss */
 .seasons .subTitle {
   transform: translateX(600px) translateY(3700px);
 }
-/* line 226, ../sass/hausenn/_hausennMain.scss */
 .seasons .rectTitleCn {
   transform: translateX(720px) translateY(3200px);
 }
-/* line 230, ../sass/hausenn/_hausennMain.scss */
 .seasons .nudeBlock {
   width: 180px;
   height: 216px;
   background-color: #dacbc7;
   transform: translateX(720px) translateY(3450px) scale(2);
 }
-/* line 237, ../sass/hausenn/_hausennMain.scss */
 .seasons .blackBlock {
   width: 135px;
   height: 28px;
   background-color: #000;
   transform: translateX(1750px) translateY(4500px);
 }
-/* line 244, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner1 {
   transform: translateX(400px) translateY(1000px) scale(0.5);
 }
-/* line 248, ../sass/hausenn/_hausennMain.scss */
 .seasons .banner2 {
   transform: translateX(400px) translateY(2200px);
 }
 
-/* line 3, ../sass/hausenn/_hausennGallery.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/hausenn/_hausennGallery.scss */
 .gallery {
   display: grid;
   grid-template-columns: 30% 800px;
@@ -776,43 +674,34 @@ a:hover {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  transition: 2s;
+}
+.gallery.show {
+  right: 0;
 }
 
 /*accordion*/
-/* line 20, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists {
-  z-index: 1;
-  bottom: 0;
-  transition: 2s;
   letter-spacing: 8px;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 27, ../sass/hausenn/_hausennGallery.scss */
-.accordionLists.show {
-  right: 0;
-}
-/* line 31, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists div[data-accordion-group] {
   color: #333;
   margin-left: 50px;
   transform: translateY(150px);
 }
-/* line 37, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists div[data-accordion-group] .accordion div[data-control] {
   font-size: 36px;
   font-weight: 600;
   padding: 2px 8px;
 }
-/* line 43, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists div[data-accordion-group] .accordion ul {
   padding-left: 24px;
 }
-/* line 46, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists div[data-accordion-group] .accordion ul .subtitle {
   font-size: 24px;
   padding: 2px 8px;
 }
-/* line 50, ../sass/hausenn/_hausennGallery.scss */
 .accordionLists div[data-accordion-group] .accordion ul .subtitle .item {
   font-size: 24px;
   font-weight: 300;
@@ -820,30 +709,25 @@ a:hover {
 }
 
 /*album*/
-/* line 61, ../sass/hausenn/_hausennGallery.scss */
 .row > .column {
   padding: 0 8px;
 }
 
-/* line 65, ../sass/hausenn/_hausennGallery.scss */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 71, ../sass/hausenn/_hausennGallery.scss */
 .column {
   float: left;
   width: 70px;
 }
 
-/* line 76, ../sass/hausenn/_hausennGallery.scss */
 .column::after {
   padding: 0;
 }
 
-/* line 80, ../sass/hausenn/_hausennGallery.scss */
 .columnAll {
   padding-top: 30px;
   display: grid;
@@ -853,7 +737,6 @@ a:hover {
 }
 
 /* The Modal (background) */
-/* line 88, ../sass/hausenn/_hausennGallery.scss */
 .modal {
   display: block;
   width: 100%;
@@ -862,14 +745,12 @@ a:hover {
 }
 
 /* Modal Content */
-/* line 95, ../sass/hausenn/_hausennGallery.scss */
 .modal-content {
   padding: 0;
   max-width: 750px;
   display: grid;
 }
 
-/* line 101, ../sass/hausenn/_hausennGallery.scss */
 .mySlides {
   display: none;
   margin: 0 auto;
@@ -877,7 +758,6 @@ a:hover {
 }
 
 /* Next & previous buttons */
-/* line 107, ../sass/hausenn/_hausennGallery.scss */
 .next,
 .prev {
   cursor: pointer;
@@ -889,7 +769,6 @@ a:hover {
   align-self: center;
 }
 
-/* line 118, ../sass/hausenn/_hausennGallery.scss */
 .numbertext {
   color: #fff;
   font-size: 12px;
@@ -898,40 +777,33 @@ a:hover {
   top: 0;
 }
 
-/* line 126, ../sass/hausenn/_hausennGallery.scss */
 img {
   margin-bottom: -4px;
 }
 
-/* line 130, ../sass/hausenn/_hausennGallery.scss */
 .demo {
   filter: brightness(50%);
 }
 
-/* line 134, ../sass/hausenn/_hausennGallery.scss */
 .active,
 .demo:hover {
   filter: brightness(100%);
 }
 
-/* line 139, ../sass/hausenn/_hausennGallery.scss */
 img.hover-shadow {
   transition: 0.3s;
 }
 
-/* line 143, ../sass/hausenn/_hausennGallery.scss */
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 1, ../sass/hausenn/_footer.scss */
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 245px;
   background-color: #dacbc7;
 }
-/* line 49, ../sass/partial/_mixin.scss */
 footer .contactInfo {
   font-family: ‘a-otf-futo-min-a101-pr6n’, serif;
   font-style: normal;
@@ -941,11 +813,9 @@ footer .contactInfo {
   width: 80%;
   margin: 0 auto;
 }
-/* line 58, ../sass/partial/_mixin.scss */
 footer .contactInfo .address {
   padding: 120px 0 0;
 }
-/* line 63, ../sass/partial/_mixin.scss */
 footer a {
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -955,21 +825,17 @@ footer a {
   text-decoration: none;
   color: #000;
 }
-/* line 73, ../sass/partial/_mixin.scss */
 footer .email {
   padding-top: 10px;
 }
-/* line 77, ../sass/partial/_mixin.scss */
 footer .contactName {
   width: 80%;
   margin: 75px auto 0;
   text-align: right;
 }
-/* line 82, ../sass/partial/_mixin.scss */
 footer .contactName img {
   width: 312px;
 }
-/* line 86, ../sass/partial/_mixin.scss */
 footer .contactName .copyright {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -977,3 +843,5 @@ footer .contactName .copyright {
   letter-spacing: 3px;
   padding-top: 30px;
 }
+
+/*# sourceMappingURL=hausenn.css.map */

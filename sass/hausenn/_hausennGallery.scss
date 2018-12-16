@@ -15,19 +15,15 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-}
-/*accordion*/
-.accordionLists {
-  z-index: 1;
-  bottom: 0;
   transition: 2s;
-  letter-spacing: 8px;
-  font-family: 'Open Sans', sans-serif;
-
   &.show {
     right: 0;
   }
-
+}
+/*accordion*/
+.accordionLists {
+  letter-spacing: 8px;
+  font-family: 'Open Sans', sans-serif;
   div[data-accordion-group] {
     color: #333;
     margin-left: 50px;
